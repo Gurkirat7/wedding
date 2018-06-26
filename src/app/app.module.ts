@@ -21,7 +21,9 @@ import { PlannerComponent } from './planner/planner.component';
 const appRoutes: Routes = [
   { path: '', component: MainComponent },
   { path: 'header', component: HeaderComponent },
-  { path: 'footer', component: FooterComponent }
+  { path: 'footer', component: FooterComponent },
+  
+
 ];
 
 @NgModule({
