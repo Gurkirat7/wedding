@@ -3,4 +3,6 @@ img {
     border-style: none;
     height: 50px;
     width: 140px;
+    margin: 0px;
 }
+#header{ margin: 0px; }
