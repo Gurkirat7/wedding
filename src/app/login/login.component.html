@@ -1,0 +1,52 @@
+
+<body style="background-image: url(../../assets/img/main.jpg); margin:100px; padding: 100px">
+  <div class="row" style="margin-bottom:50px">
+    <div class="col-md-4"></div>
+  <img class="col-md-4" src="../../assets/img/logo1.png" width="75%" height="75%" />
+</div>
+  <div class="row">
+<div class="col-md-3"></div>
+<div class="col col-md-7" style="text-align: center">
+  <h1>Hey, Good To see You Again</h1><br>
+  <h3>Login to get going</h3><br>
+</div>
+</div>
+
+<div class="row" >
+<div class="col-md-2"></div>
+ <div id="form" class="col-md-8" style="background-image: url(../../assets/img/main.jpg);padding:40px">
+  <div *ngIf="loginsucc==false">  
+        <div class="col-md-12">
+          <table>
+      <tr>
+          <td class="col-md-4">USER NAME </td> <td class="col-md-4"> <input type="text" [(ngModel)]="nam" id="name" (blur)="log()"/></td>
+          <td class="col-md-4">
+              <img *ngIf = "form.nam!=0" src="../../assets/img/tick.png" />
+              <img *ngIf="form.nam==0" src="../../assets/img/cross.png "  />
+          </td><br><br>
+      </tr>
+      <tr>
+      <td class="col-md-4">PASSWORD</td><td class="col-md-4"> <input type="password" [(ngModel)]="pas" id="pass" (blur)="log()"/></td>
+      <td class="col-md-4"><img *ngIf="form.pas!=0" src="../../assets/img/tick.png"/>
+          <img *ngIf="form.pas==0"src="../../assets/img/cross.png" />
+      </td><br><br>
+      </tr>
+  </table>
+  </div>
+  <button class="btn-lg btn-success my-2 my-sm-0" type="submit" (click)="succ()">
+          LOGIN
+        </button>
+  </div>
+   <div *ngIf="loginsucc==true">
+       <h1> WELCOME USER {{nam}} </h1>
+   </div>
+   </div>
+   </div>
+
+   <div class="row">
+     <div class="col-md-4"></div>
+    <div class="col-md-4">
+      <a class="l" routerLink="/">&lt;- Back To Home Page</a>
+    </div>
+    </div>
+  </body>

@@ -17,12 +17,15 @@ import { DecorsComponent } from './decors/decors.component';
 import { ClothingComponent } from './clothing/clothing.component';
 import { DjComponent } from './dj/dj.component';
 import { PlannerComponent } from './planner/planner.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
 
 const appRoutes: Routes = [
   { path: '', component: MainComponent },
   { path: 'header', component: HeaderComponent },
   { path: 'footer', component: FooterComponent },
-  
+  { path: 'login', component: LoginComponent },  
+  { path: 'signup', component: SignupComponent }, 
 
 ];
 
@@ -41,7 +44,9 @@ const appRoutes: Routes = [
     DecorsComponent,
     ClothingComponent,
     DjComponent,
-    PlannerComponent
+    PlannerComponent,
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
