@@ -25,7 +25,8 @@ const appRoutes: Routes = [
   { path: 'header', component: HeaderComponent },
   { path: 'footer', component: FooterComponent },
   { path: 'login', component: LoginComponent },  
-  { path: 'signup', component: SignupComponent }, 
+  { path: 'signup', component: SignupComponent },
+  { path: 'mehandi', component: MehandiComponent }, 
 
 ];
 

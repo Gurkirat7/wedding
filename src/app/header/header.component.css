@@ -6,3 +6,16 @@ img {
     margin: 0px;
 }
 #header{ margin: 0px; }
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #71d5ba;
+}
+.btn-outline-success:hover {
+    color: #fff;
+    background-color: #71d5ba;
+    border-color: #71d5ba;
+}
+.btn{
+    color:#71d5ba;
+    border-color: #71d5ba;
+}

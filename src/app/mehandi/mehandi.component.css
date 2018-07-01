@@ -1,0 +1,36 @@
+body {
+    padding-top: 3.5rem;
+  }
+  
+main{
+    margin-top: 80px;
+      
+}
+
+.jumbotron {  
+    background-image:   url("../../assets/img/a.jpeg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:630px;
+    margin-bottom: 0.5%;
+    padding-top: 180px;
+}
+
+@font-face {
+    font-family: soicon;
+    src: url("https://fonts.googleapis.com/css?family=Spirax");
+}
+
+.container{
+    font-family: 'Spirax', cursive;
+    color: white;
+    
+}
+
+.btn-primary {
+    color: #007c8c;
+    background-color: #ffffff;
+    border-color: #00BCD4;
+    margin-right: 50px;
+    margin-left: 230px;
+}
