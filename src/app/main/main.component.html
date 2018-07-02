@@ -8,7 +8,63 @@
     <link rel="icon" href="../../../../favicon.ico">
 
     <title>Shaddi A-Z</title>
-   
+    <style>
+      a{
+        color: white;
+        font-size: 30px;
+
+      }
+      .des {         
+    width: 100%;
+        
+    border: 1px solid #fff;
+    transition: all .2s ease-in-out
+      }
+    .des img{
+      background-size: cover;
+    }
+    .link {
+      display:none;
+    }
+    .des:hover .link {
+        display: block;
+        position: relative;
+        top:45%;
+        left:45% ;
+        z-index: 400;
+               
+    }
+    
+    .des:hover img{
+       cursor: pointer;
+        border: 5px solid white;
+        z-index: 300;
+        position: absolute;
+        left:-2%;
+        top:-5%;
+        width: 105%;
+        height: 110%;
+        
+    }
+    .middle{
+      position: relative;
+      margin-left:20px;
+    }
+    .des h1{
+      position: absolute;
+      left:30%;
+      top:30%;
+    }
+    .btn-secondary {
+    color: rgb(8, 8, 8);
+    background-color:white;
+    border-color:white;
+    font-weight: 800;
+    }
+    .btn-secondary:hover{
+      border-radius: 30%;
+    }
+    </style>
    
 
     
@@ -74,7 +130,7 @@
 
         <!-- Three columns of text below the carousel -->
         <div class="row">
-          <div class="col-md-12" style="margin-bottom:30px;text-align: center">
+          <div class="col-lg-12" style="margin:30px;text-align: center">
             <h1>IDEAS & INSPIRATION</h1>  
             <h3>AND WHERE TO FIND A PERSONS TO MAKE THAT COME TRUE</h3>        
           </div>
@@ -82,69 +138,69 @@
 
         <div class="middle">
         <div class="row" style="margin-bottom:30px;">
-          <div class="col-md-4 col-sm-6 col-xs-12 des" >
-            <img src="../../assets/img/4.jpg" />
-            <h1>Mehandi</h1>
+          <div class="col-md-4 col-sm-4 col-xs-12 des" style="margin: -10px; ">
+            <img src="../../assets/img/c.jpg" width="100%" style="opacity: 0.9; height: 400px;"/>
+            <h1  style="font-size:40px; color: white; z-index:300">MEHANDI</h1>
             <div class="link">
                 <p><a class="btn btn-secondary" routerLink="/mehandi" role="button">EXPLORE -></a></p>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6 col-xs-12 des">
-            <img src="../../assets/img/4.jpg"/>
-            <h1>Caterers</h1>
-            <div class="link">
-                <p><a class="btn btn-secondary" routerLink="/caterers" role="button">EXPLORE -></a></p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12 des" >
-            <img src="../../assets/img/4.jpg"/>
-            <h1>WEDDING</h1>
+          <div class="col-md-4 col-sm-4 col-xs-12 des" style="margin: -10px ">
+            <img src="../../assets/img/40.jpg" width="100%" style="opacity: 0.9; height: 400px;"/>
+            <h1 style="font-size:40px; color: white; z-index:300">CATERERS</h1>
             <div class="link">
                 <p><a class="btn btn-secondary" href="#" role="button">EXPLORE -></a></p>
             </div>
-          
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-12 des" style="margin: -10px ">
+            <img src="../../assets/img/64.jpeg" width="100%" style="opacity: 0.9;height: 400px;"/>
+            <h1 style="font-size:40px; color: white; z-index:300">PHOTOGRAPHERS</h1>
+            <div class="link">
+                <p><a class="btn btn-secondary" href="#" role="button">EXPLORE -></a></p>
+            </div>
+          </div>
         </div>
-        
-          <div class="col-md-4 col-sm-6 col-xs-12 des">
-            <img src="../../assets/img/4.jpg"/>
-            <h1>WEDDING</h1>
+        <div class="row" style="margin-bottom:30px;">
+          <div class="col-md-4 col-sm-4 col-xs-12 des" style="margin: -10px; ">
+            <img src="../../assets/img/p.jpeg" width="100%" style="opacity: 0.9;height: 400px;"/>
+            <h1 style="font-size:40px; color: white; z-index:300">MAKE-UP ARTISTS</h1>
             <div class="link">
                 <p><a class="btn btn-secondary" href="#" role="button">EXPLORE -></a></p>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6 col-xs-12 des">
-            <img src="../../assets/img/4.jpg"/>
-            <h1>WEDDING</h1>
+          <div class="col-md-4 col-sm-4 col-xs-12 des" style="margin: -10px ">
+            <img src="../../assets/img/i.jfif" width="100%" style="opacity: 0.9;height: 400px;"/>
+            <h1 style="font-size:40px; color: white; z-index:300">CHOREOGRAPHERS</h1>
             <div class="link">
                 <p><a class="btn btn-secondary" href="#" role="button">EXPLORE -></a></p>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6 col-xs-12 des">
-            <img src="../../assets/img/4.jpg"/>
-            <h1>WEDDING</h1>
+          <div class="col-md-4 col-sm-4 col-xs-12 des" style="margin: -10px ">
+            <img src="../../assets/img/18.jpeg" width="100%" style="opacity: 0.9;height: 400px;"/>
+            <h1 style="font-size:40px; color: white; z-index:300">WEDDING DRESSES</h1>
             <div class="link">
                 <p><a class="btn btn-secondary" href="#" role="button">EXPLORE -></a></p>
             </div>
-          
+          </div>
         </div>
-        
-          <div class="col-md-4 col-sm-6 col-xs-12 des">
-            <img src="../../assets/img/4.jpg"/>
-            <h1>WEDDING</h1>
+        <div class="row" style="margin-bottom:30px;">
+          <div class="col-md-4 col-sm-4 col-xs-12 des" style="margin: -10px; ">
+            <img src="../../assets/img/50.jpg" width="100%" style="opacity: 0.9;height: 400px;"/>
+            <h1 style="font-size:40px; color: white; z-index:300">DJ & BANDS</h1>
             <div class="link">
                 <p><a class="btn btn-secondary" href="#" role="button">EXPLORE -></a></p>
             </div>
           </div>
-          <div class="col-md-4 col-sm-6 col-xs-12 des">
-            <img src="../../assets/img/4.jpg"/>
-            <h1>WEDDING</h1>
+          <div class="col-md-4 col-sm-4 col-xs-12 des" style="margin: -10px ">
+            <img src="../../assets/img/32.jpeg" width="100%" style="opacity: 0.9;height: 400px;"/>
+            <h1 style="font-size:40px; color: white; z-index:300">THEMES & DECOR</h1>
             <div class="link">
                 <p><a class="btn btn-secondary" href="#" role="button">EXPLORE -></a></p>
             </div>
           </div>
-          <div class="col-md-4 col-sm-12 col-xs-12 des">
-            <img src="../../assets/img/4.jpg"/>
-            <h1>WEDDING</h1>
+          <div class="col-md-4 col-sm-4 col-xs-12 des" style="margin: -10px ">
+            <img src="../../assets/img/62.jpg" width="100%" style="opacity: 0.9;height: 400px;"/>
+            <h1 style="font-size:40px; color: white; z-index:300">HONEYMOON PLANNER</h1>
             <div class="link">
                 <p><a class="btn btn-secondary" href="#" role="button">EXPLORE -></a></p>
             </div>
