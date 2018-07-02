@@ -31,6 +31,22 @@ main{
     color: #007c8c;
     background-color: #ffffff;
     border-color: #00BCD4;
+<<<<<<< HEAD
     margin-right: 50px;
     margin-left: 230px;
 }
+=======
+/*<<<<<<< HEAD */
+    margin-right: 50px;
+    margin-left: 230px;
+
+
+   margin-top: 80px;
+   height: 50px;
+}
+
+.col-md-12 {
+    padding: 0px; 
+}
+
+>>>>>>> parent of e0c61ef... Merge branch 'master' of https://github.com/Gurkirat7/wedding
