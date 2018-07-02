@@ -6,6 +6,7 @@ body {
     padding-top: 3rem;
     padding-bottom: 3rem;
     color: #5a5a5a;
+    background-color: #ffffff;
   }
   
   
@@ -90,3 +91,88 @@ body {
     }
   }
   
+
+  a{
+    color: white;
+    font-size: 30px;
+
+  }
+  .des {         
+width: 100%;
+margin:-10px;
+border: 1px solid #fff;
+transition: all .2s ease-in-out
+  }
+.des img{
+  background-size: cover;
+  width: 100%;
+  opacity:0.9;
+  margin-bottom:30px;
+}
+
+.des h1{
+  position: absolute;
+  left:30%;
+  top:30%;
+  font-size:40px;
+  color: white;
+  z-index:300;
+}
+.des:hover img{
+  cursor: pointer;
+   border: 5px solid white;
+   z-index: 300;
+   position: absolute;
+   left:-2%;
+   top:-5%;
+   width: 105%;
+   height: 110%;
+}
+.link {
+  display:none;
+}
+.des:hover .link {
+    display: block;
+    position: relative;
+    top:45%;
+    left:45% ;
+    z-index: 400;
+           
+}
+
+
+.middle{
+  position: relative;
+  margin-left:20px;
+}
+
+.btn-secondary {
+color: rgb(8, 8, 8);
+background-color:white;
+border-color:white;
+font-weight: 800;
+}
+.btn-secondary:hover{
+  border-radius: 30%;
+}
+/* @media (min-width:40em){
+  .des:hover img{
+    margin-bottom:5px;
+  }
+}
+@media (min-width:40em){
+  .des:hover h1{
+    font-size:20px;
+    position: absolute;
+    left:10%;
+    top:10%;
+  }
+}
+@media (min-width:40em){
+  .des:hover .link{
+    font-size:20px;
+    position: relative;
+    top:25%;
+    left:25% ;
+  }
+} */
