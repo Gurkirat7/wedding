@@ -1,13 +1,11 @@
 @import "../../assets/css/mbr-additional.css";
-body{
-  background-color: #71d5ba;
-}
+
 
 .cid-qWbiCAZDB8[_ngcontent-c2] .media-wrap[_ngcontent-c2] img[_ngcontent-c2] {
   height: 5rem;
 }
 section {
-    background-color: #71d5ba; }
+    background-color: #eeeeee; }
   
   section,
   .container,
@@ -87,7 +85,7 @@ section {
     color: #000000; }
   
   .mbr-bg-white {
-    background-color: #71d5ba; }
+    background-color: #ffffff; }
   
   .mbr-bg-black {
     background-color: #000000; }

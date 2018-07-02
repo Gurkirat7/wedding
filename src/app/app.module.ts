@@ -26,10 +26,8 @@ const appRoutes: Routes = [
   { path: 'footer', component: FooterComponent },
   { path: 'login', component: LoginComponent },  
   { path: 'signup', component: SignupComponent },
-  { path: 'mehandi', component: MehandiComponent },
-  { path: 'caterers', component:  CaterersComponent } 
-
-
+  { path: 'mehandi', component: MehandiComponent }, 
+  { path: 'caterers', component: CaterersComponent },
 ];
 
 @NgModule({

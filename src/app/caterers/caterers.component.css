@@ -1,25 +1,23 @@
-
-
 .btn-outline-success:hover {
     color: #fff;
     background-color: #71d5ba;
     border-color: #71d5ba;
-}
-
-
-
-body {
+  }
+  
+  
+  
+  body {
     padding-top: 3.5rem;
     background-color: #71d5ba;
   }
   
-main{
+  main{
     margin-top: 80px;
     
       
-}
-
-.jumbotron {  
+  }
+  
+  .jumbotron {  
     background-image:   url("../../assets/img/a.jpeg") ;
     background-repeat: no-repeat;
     background-size: cover;
@@ -27,29 +25,29 @@ main{
     margin-bottom: 0.5%;
     padding-top: 180px;
     
-
-}
-
-@font-face {
+  
+  }
+  
+  @font-face {
     font-family: soicon;
     src: url("https://fonts.googleapis.com/css?family=Spirax");
-}
-
-.container{
+  }
+  
+  .container{
     font-family: 'Spirax', cursive;
     color: white;
     
     
-}
-
-.btn-primary {
+  }
+  
+  .btn-primary {
     color: #007c8c;
     background-color: #ffffff;
     border-color: #00BCD4;
    margin-top: 80px;
    height: 50px;
-}
-
-.col-md-12 {
+  }
+  
+  .col-md-12 {
     padding: 0px; 
-}
+  }
