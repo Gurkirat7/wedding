@@ -106,12 +106,13 @@ transition: all .2s ease-in-out
 .des img{
   background-size: cover;
   width: 100%;
-  opacity:0.9;
-  margin-bottom:30px;
+  opacity:1;
+  height:400px;
+  margin-bottom: 30px;
 }
 
 .des h1{
-  position: absolute;
+  position: relative;
   left:30%;
   top:30%;
   font-size:40px;
@@ -119,16 +120,16 @@ transition: all .2s ease-in-out
   z-index:300;
 }
 .des:hover img{
-  cursor: pointer;
-   border: 5px solid white;
    z-index: 300;
-   position: absolute;
-   left:-2%;
-   top:-5%;
-   
-   width: 105%;
-   height: 150%;
+   margin: .4em;
+   cursor: pointer;
+   display: inline-block;
+    vertical-align: middle;
+    transition-property: transform;
+   transform: scale(1);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
+
 .link {
   display:none;
 }
@@ -155,6 +156,12 @@ font-weight: 800;
 }
 .btn-secondary:hover{
   border-radius: 30%;
+}
+
+@media(max-width:321px){
+ .des h1{
+  font-size: 20px;
+}
 }
 /* @media (min-width:40em){
   .des:hover img{
