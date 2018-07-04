@@ -130,7 +130,11 @@ transition: all .2s ease-in-out
   
 }
 
+.des:hover h1{
   
+  transition-property:transform;
+   transform: scale(1.1);
+}
 
 .des:hover img{
    z-index: 300;
