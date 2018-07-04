@@ -220,6 +220,7 @@ font-family: Arial, Helvetica, sans-serif;
     left:25% ;
   }
 } */
+<<<<<<< HEAD
 .mehandi{
   background-image: url("../../assets/img/c.jpg");
  
@@ -300,4 +301,8 @@ font-family: Arial, Helvetica, sans-serif;
   width: 100%;
   
   
+=======
+.row{
+  margin-right:0px;
+>>>>>>> master
 }
