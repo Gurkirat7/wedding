@@ -12,4 +12,17 @@ export class DjComponent implements OnInit {
   ngOnInit() {
   }
 
+  // meh() {
+   
+  //   var checkBox = document.getElementById("meh");
+  //   var text = document.getElementById("text");
+  //   if (checkBox.checked == true){
+  //     text.style.display = "block";
+  //   } else {
+  //     text.style.display = "none";
+  //   }
+
+  
+  // }
+
 }
