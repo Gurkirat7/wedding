@@ -2,6 +2,11 @@
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
+@font-face {
+  font-family: soicon;
+  src: url("https://fonts.googleapis.com/css?family=Spirax");
+}
+
 body {
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -9,6 +14,9 @@ body {
     background-color: #ffffff;
   }
   
+  .btn{
+    text-align: center;
+  }
   
   /* CUSTOMIZE THE CAROUSEL
   -------------------------------------------------- */
@@ -112,13 +120,18 @@ transition: all .2s ease-in-out
 }
 
 .des h1{
-  position: relative;
-  left:30%;
-  top:30%;
+  position: absolute;
+  left: 20%;
+  top: 30%;
   font-size:40px;
   color: white;
-  z-index:300;
+  font-family: 'Spirax', cursive;
+  color: white;
+  
 }
+
+  
+
 .des:hover img{
    z-index: 300;
    margin: .4em;
@@ -136,8 +149,8 @@ transition: all .2s ease-in-out
 .des:hover .link {
     display: block;
     position: relative;
-    top:45%;
-    left:45% ;
+    top:50%;
+    left:37% ;
     z-index: 400;
            
 }
@@ -148,22 +161,45 @@ transition: all .2s ease-in-out
   margin-left:20px;
 }
 
+
 .btn-secondary {
 color: rgb(8, 8, 8);
 background-color:white;
 border-color:white;
-font-weight: 800;
+font-weight: 500;
+font-family: Arial, Helvetica, sans-serif;
 }
 .btn-secondary:hover{
-  border-radius: 30%;
+  
+    color: #fff;
+    background-color: #71d5ba;
+    border-color: #71d5ba;
+  
+  
+  border-radius: 10%;
 }
 
-@media(max-width:321px){
+@media(max-width:670px){
  .des h1{
   font-size: 20px;
 }
 }
-/* @media (min-width:40em){
+
+@media(max-width:1250px){
+  .des h1{
+   font-size: 30px;
+ 
+}
+}
+.des h1:hover{
+  
+    color: #fff;
+    background-color: #71d5ba;
+    border-color: #71d5ba;
+
+  
+}
+/* @media (max-width:40em){
   .des:hover img{
     margin-bottom:5px;
   }
@@ -184,3 +220,84 @@ font-weight: 800;
     left:25% ;
   }
 } */
+.mehandi{
+  background-image: url("../../assets/img/c.jpg");
+ 
+  height: 370px;
+  width: 100%;
+  background-size: cover;
+}
+.des:hover {
+  z-index: 300;
+  
+  cursor: pointer;
+  display: inline-block;
+   vertical-align: middle;
+   transition-property: transform;
+  transform: scale(1.1);
+   transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+
+.caterers{
+  background-image: url("../../assets/img/40.jpg");
+ 
+  height: 370px;
+  width: 100%;
+  background-size: cover;
+}
+
+
+
+.photographers{
+  background-image: url("../../assets/img/64.jpeg");
+  background-size: cover;
+
+  height: 370px;
+  width: 100%;
+}
+
+.makeup{
+  background-image: url("../../assets/img/p.jpeg");
+  background-size: cover;
+
+  height: 370px;
+  width: 100%;
+}
+
+.choreo{
+  background-image: url("../../assets/img/i.jfif");
+  background-size: cover;
+  height: 370px;
+  width: 100%;
+}
+
+
+
+.dj{
+  background-image: url("../../assets/img/50.jpg");
+  background-size: cover;
+  height: 370px;
+  width: 100%;
+}
+.dress{
+  background-image: url("../../assets/img/18.jpeg");
+  background-size: cover;
+  height: 370px;
+  width: 100%;
+  
+}
+.decor{
+  background-image: url("../../assets/img/32.jpeg");
+  background-size: cover;
+  height: 370px;
+  width: 100%;
+  
+}
+.honey{
+  background-image: url("../../assets/img/62.jpg");
+  background-size: cover;
+  height: 370px;
+  width: 100%;
+  
+  
+}
