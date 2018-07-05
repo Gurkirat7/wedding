@@ -11,5 +11,12 @@ export class SignupComponent implements OnInit {
 
   ngOnInit() {
   }
-
+ user(){
+    document.getElementById("user1").style.display="block";
+    document.getElementById("prov1").style.display="none";
+ }
+ prov(){
+  document.getElementById("prov1").style.display="block";
+  document.getElementById("user1").style.display="none";
+ }
 }

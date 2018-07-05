@@ -32,7 +32,6 @@ td
     #er_na,#er_pa,#er_na2,#er_pa2
 	{
 		display: none;
-		color: red;
     }
     #image img
 	{
@@ -43,7 +42,7 @@ td
        font-size: 50px;
        font-family: cursive;
        font: outline;
-       font-weight: 700;
+       font-weight: 500;
    }
    h3{
        font-size: 40px;
@@ -54,4 +53,11 @@ td
        font-weight:500;
        text-align: center;
        margin-top:500px;
+   }
+   img{
+        background-color: white;      
+       position: relative;
+       border-radius: 50%;
+       top:-70px;
+       height: 200px;
    }
