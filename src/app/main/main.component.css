@@ -1,7 +1,8 @@
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
-
+.h2{  text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+}
 @font-face {
   font-family: soicon;
   src: url("https://fonts.googleapis.com/css?family=Spirax");
@@ -127,13 +128,23 @@ transition: all .2s ease-in-out
   color: white;
   font-family: 'Spirax', cursive;
   color: white;
-  
+  font-weight: 900;
+  text-shadow: -1.5px 0 black, 0 1.5px black, 1.5px 0 black, 0 -1.5px black;
+
 }
 
 .des:hover h1{
   
   transition-property:transform;
    transform: scale(1.1);
+   
+  
+    color: #fff;
+    
+   /* #71d5ba; */
+
+  
+
 }
 
 .des:hover img{
@@ -192,17 +203,10 @@ font-family: Arial, Helvetica, sans-serif;
 @media(max-width:1250px){
   .des h1{
    font-size: 30px;
- 
+   
 }
 }
-.des h1:hover{
-  
-    color: #fff;
-    background-color: #71d5ba;
-    border-color: #71d5ba;
 
-  
-}
 /* @media (max-width:40em){
   .des:hover img{
     margin-bottom:5px;

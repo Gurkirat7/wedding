@@ -10,6 +10,9 @@ img {
 .navbar-dark .navbar-nav .nav-link {
     color: #71d5ba;
 }
+.nav-link{
+    float: right;
+}
 .btn-outline-success:hover {
     color: #fff;
     background-color: #71d5ba;
