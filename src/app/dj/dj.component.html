@@ -1,19 +1,33 @@
 
-<body ng-app="" style="margin-top:500px">
+<body ng-app="" style="margin-top:100px">
        
   <div class="row">
     <div class="col-md-4">
-       Arabic <input type="checkbox" id="meh" (click)="meh()"><br><br>
-       Indian <input type="checkbox" id="meh" (click)="myFunction()"><br><br>
-       Pakistan <input type="checkbox" id="meh" (click)="myFunction()"><br><br>
-       Full Hand <input type="checkbox" id="meh" (click)="myFunction()"><br><br>
-        Feet<input type="checkbox" id="meh" (click)="myFunction()"><br><br>
-        Half Hand <input type="checkbox" id="meh" (click)="myFunction()"><br><br>
-       
-
+      <table style="background-color:#e9ecef;font-size:30px;font-weight:500;margin:10px;">
+        <tr>
+          <td>Arabic</td> &nbsp; &nbsp;<td><input type="checkbox" id="meh" (click)="meh()"></td>
+        </tr>
+        <tr>
+            <td>Indian</td> &nbsp; &nbsp;<td><input type="checkbox" id="meh" (click)="myFunction()"></td>
+        </tr>
+        <tr>
+           <td>Pakistan</td> &nbsp; &nbsp;<td><input type="checkbox" id="meh" (click)="myFunction()"></td>
+        </tr>
+        <tr>
+           <td>Full Hand </td> &nbsp; &nbsp;<td> <input type="checkbox" id="meh" (click)="myFunction()"></td>
+        </tr>
+        <tr>
+           <td>Feet</td> &nbsp; &nbsp;<td><input type="checkbox" id="meh" (click)="myFunction()"></td>
+        </tr>
+        <tr>
+           <td> Half Hand</td> &nbsp; &nbsp;<td><input type="checkbox" id="meh" (click)="myFunction()"></td>
+        </tr>
+      </table>
     </div>
     <div class="col-md-8">
         <p id="text" style="display:none; font-size:40px;color:rgb(12, 12, 12)">Checkbox is CHECKED!</p>
+        
+        <p id="text1" style="display:none; font-size:40px;color:rgb(12, 12, 12)">Checkbox CHECKED!</p>
         
     </div>
   </div>

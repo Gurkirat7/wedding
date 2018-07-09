@@ -19,6 +19,7 @@ import { DjComponent } from './dj/dj.component';
 import { PlannerComponent } from './planner/planner.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
+import { ExploreComponent } from './explore/explore.component';
 
 const appRoutes: Routes = [
   { path: '', component: MainComponent },
@@ -29,7 +30,8 @@ const appRoutes: Routes = [
   { path: 'mehandi', component: MehandiComponent }, 
   { path: 'caterers', component: CaterersComponent },
   { path: 'clothing', component: ClothingComponent },
-  { path: 'dj', component: DjComponent }
+  { path: 'dj', component: DjComponent },
+  { path: "explore/:keyword", component: ExploreComponent}
 ];
 
 @NgModule({
@@ -49,7 +51,8 @@ const appRoutes: Routes = [
     DjComponent,
     PlannerComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    ExploreComponent
   ],
   imports: [
     BrowserModule,
