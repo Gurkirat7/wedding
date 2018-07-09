@@ -3,31 +3,34 @@
        
   <div class="row">
     <div class="col-md-4">
-      <table style="background-color:#e9ecef;font-size:30px;font-weight:500;margin:10px;">
-        <tr>
-          <td>Arabic</td> &nbsp; &nbsp;<td><input type="checkbox" id="meh" (click)="meh()"></td>
+        <ul>
+          <li  *ngFor="let eachCat of catList; let i = index">
+            <input type="checkbox" id="meh" (click)="catChecked(i)" checked="true" *ngIf="eachCat.checked==true">
+            <input type="checkbox" id="meh" (click)="catChecked(i)" *ngIf="eachCat.checked==false">
+             {{eachCat.cat}}</li>
+
+          
+        <!-- <tr>
+            <td>Indian</td> &nbsp; &nbsp;<td><input type="checkbox" id="meh" ng-checked="myFunction"></td>
         </tr>
         <tr>
-            <td>Indian</td> &nbsp; &nbsp;<td><input type="checkbox" id="meh" (click)="myFunction()"></td>
+           <td>Pakistan</td> &nbsp; &nbsp;<td><input type="checkbox" id="meh" ng-checked="myFunction"></td>
         </tr>
         <tr>
-           <td>Pakistan</td> &nbsp; &nbsp;<td><input type="checkbox" id="meh" (click)="myFunction()"></td>
+           <td>Full Hand </td> &nbsp; &nbsp;<td> <input type="checkbox" id="meh" ng-checked="myFunction"></td>
         </tr>
         <tr>
-           <td>Full Hand </td> &nbsp; &nbsp;<td> <input type="checkbox" id="meh" (click)="myFunction()"></td>
+           <td>Feet</td> &nbsp; &nbsp;<td><input type="checkbox" id="meh" (ng-checked)="myFunction()"></td>
         </tr>
         <tr>
-           <td>Feet</td> &nbsp; &nbsp;<td><input type="checkbox" id="meh" (click)="myFunction()"></td>
-        </tr>
-        <tr>
-           <td> Half Hand</td> &nbsp; &nbsp;<td><input type="checkbox" id="meh" (click)="myFunction()"></td>
-        </tr>
-      </table>
+           <td> Half Hand</td> &nbsp; &nbsp;<td><input type="checkbox" id="meh" ng-checked="myFunction"></td>
+        </tr> -->
+      </ul>
     </div>
     <div class="col-md-8">
-        <p id="text" style="display:none; font-size:40px;color:rgb(12, 12, 12)">Checkbox is CHECKED!</p>
+        <p id="text" >Checkbox is CHECKED!</p>
         
-        <p id="text1" style="display:none; font-size:40px;color:rgb(12, 12, 12)">Checkbox CHECKED!</p>
+        
         
     </div>
   </div>

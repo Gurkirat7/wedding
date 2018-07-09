@@ -1,5 +1,7 @@
-.text{
+#text{
     display:none;
+    font-size:40px;
+    color:rgb(12, 12, 12);
 }
 .text1{
     display:none;
