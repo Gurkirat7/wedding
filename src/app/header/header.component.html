@@ -1,25 +1,61 @@
-
 <div id="header">
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark ">
     <a class="navbar-brand" routerLink="/">
-      <img src="../../assets/img/logo1.png"/>
+      <img src="../../assets/img/logo1.png" />
     </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+      aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active">
-          <a class="nav-link" >Saved Pages <span class="sr-only">(current)</span></a>
+          <a class="nav-link">Saved Pages
+            <span class="sr-only">(current)</span>
+          </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">About Us</a>
         </li>
       </ul>
       <form class="form-inline mt-2 mt-md-0">
-       <a  class="btn btn-outline-success my-2 my-sm-0"  routerLink="/login"> Login</a>
-       <a class="btn btn-outline-success my-2 my-sm-0" routerLink="/signup">Signup</a>
+        <a class="btn btn-outline-success my-2 my-sm-0" onclick="document.getElementById('modal-wrapper').style.display='block'">
+        Login</a>
+        <a class="btn btn-outline-success my-2 my-sm-0" routerLink="/signup">Signup</a>
       </form>
     </div>
   </nav>
+  <div id="modal-wrapper" class="modal"  >
+
+    <form class="modal-content animate" style="margin-top: 100px" action="/action_page.php">
+
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">X</span>
+        <img src="../../assets/img/logo1.png" alt="Avatar" class="avatar">
+        <h1 style="text-align:center">LOGIN</h1>
+      </div>
+
+      <div class="container">
+        <input type="text" placeholder="Enter Username" name="uname">
+        <input type="password" placeholder="Enter Password" name="psw">
+        <button type="submit">Login</button><br>
+        <h5>Not have an account...??<a routerLink="/signup" onclick="document.getElementById('modal-wrapper').style.display='none'">SignUp Here</a></h5>
+        
+      </div>
+
+    </form>
+
+  </div>
+
 </div>
+
+
+<script>
+
+  var modal = document.getElementById('modal-wrapper');
+  window.onclick = function (event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  }
+</script>
