@@ -11,6 +11,9 @@
 
 
 
-body{
+/* body{
     background-color:#71d5ba;
+} */
+body{
+  background-image: url("assets/img/texture-turquoise.png");
 }
