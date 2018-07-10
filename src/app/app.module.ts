@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import{FormsModule} from '@angular/forms';
+import {FormsModule} from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -24,9 +24,9 @@ const appRoutes: Routes = [
   { path: '', component: MainComponent },
   { path: 'header', component: HeaderComponent },
   { path: 'footer', component: FooterComponent },
-  { path: 'login', component: LoginComponent },  
+  { path: 'contact', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
-  { path: 'mehandi', component: MehandiComponent }, 
+  { path: 'mehandi', component: MehandiComponent },
   { path: 'caterers', component: CaterersComponent },
   { path: 'clothing', component: ClothingComponent },
   { path: 'dj', component: DjComponent }
