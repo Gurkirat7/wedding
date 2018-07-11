@@ -4,8 +4,10 @@
 <div style="margin:250px; border:10px solid black;background-color: white;padding:50px">
     <div style="text-align: center; padding:20px; ">
       <h1 >Create A New Account</h1><br>
+      <form [formGroup]="form">
       <h4 ><input type="radio" name="key" (click)="user()" formControlName="key">USER &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         <input type="radio" name="key" (click)="prov()" formControlName="key">PROVIDER</h4>
+      </form>
     </div>
 
     <div class="row">
