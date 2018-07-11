@@ -1,89 +1,139 @@
+<body>
+  <form [formGroup]="form" (ngSubmit)="singup()">
 
-<body >
-  <div style="background-color: #80808085; width:100%;height:100%;margin-top:-150px;padding:20px">
-<div style="margin:250px; border:10px solid black;background-color: white;padding:50px">
-    <div style="text-align: center; padding:20px; ">
-      <h1 >Create A New Account</h1><br>
-      <form [formGroup]="form">
-      <h4 ><input type="radio" name="key" (click)="user()" formControlName="key">USER &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        <input type="radio" name="key" (click)="prov()" formControlName="key">PROVIDER</h4>
-      </form>
-    </div>
+    <div style="background-color: #80808085; width:100%;height:100%;margin-top:-150px;padding:20px">
+      <div style="margin:250px; border:10px solid black;background-color: white;padding:50px">
+        <div style="text-align: center; padding:20px; ">
+          <h1>Create A New Account</h1>
+          <br>
 
-    <div class="row">
-        <div style="text-align: center; padding:20px">
-            <h3>Come and join our website to have a Smooth Experience while <i>Planning Weddings</i> for your Loved Ones</h3>
+          <h4>
+            <input type="radio" name="key" (click)="user()" formControlName="key" value="user">USER &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            <input type="radio" name="key" (click)="prov()" formControlName="key" value="providers"> PROVIDER</h4>
+        </div>
+
+        <div class="row">
+          <div style="text-align: center; padding:20px">
+            <h3>Come and join our website to have a Smooth Experience while
+              <i>Planning Weddings</i> for your Loved Ones</h3>
 
           </div>
-      <div class="col-md-6" id="prov1" style=" display:none; ">
-        <form [formGroup]="form" (ngSubmit)="singup()">
+
           <table>
-        <tr>
-          <td>First Name </td> <td><input type="text" formControlName="f_name" name="f_name"/> </td><br><br>
-        </tr>
-        <tr>
-          <td> Last Name</td><td><input type="text" formControlName="l_name"  name='l_name'/></td> <br><br>
-        </tr>
-        <tr>
-         <td> D O B </td> <td><input type="date" formControlName="dob" name='dob' /> </td> <br><br>
-        </tr>
-        <tr>
-         <td> Gender: </td> <td><input type="radio" name="gender" value="male"  formControlName="gender"> Male
-          <input type="radio" name="gender" value="female" formControlName="gender"> Female
-          <input type="radio" name="gender" value="other" formControlName="gender"> Other</td> <br><br>
-        </tr>
-        <tr>
-          <td> Email </td> <td><input type="email" formControlName="email" /> </td> <br><br>
-        </tr>
-        <tr>
-          <td> Username </td> <td> <input type="text" formControlName="username" /></td> <br><br>
-        </tr>
-        <tr>
-         <td> Password</td> <td> <input type="password" formControlName="password" /></td> <br><br>
-        </tr>
-        <tr> <td></td>
-        <td><button class="btn-lg btn-success my-2 my-sm-0" type="submit" style="text-align: center">
-            SIGNUP
-          </button></td>
-        </tr>
-         </table>
-       </form>
-      </div>
-      <div class="col-md-6" id="user1" style="display:none">
-        <form>
-          <table>
-        <tr>
-          <td>First Name </td> <td><input type="text"/> </td><br><br>
-        </tr>
-        <tr>
-          <td> Last Name</td><td><input type="text"/></td> <br><br>
-        </tr>
-        <tr>
-         <td> D O B </td> <td><input type="date"/> </td> <br><br>
-        </tr>
-        <tr>
-         <td> Gender: </td> <td><input type="radio" name="gender" value="male" > Male
-          <input type="radio" name="gender" value="female"> Female
-          <input type="radio" name="gender" value="other"> Other</td> <br><br>
-        </tr>
-        <tr>
-          <td> Email </td> <td><input type="email"/> </td> <br><br>
-        </tr>
-        <tr>
-          <td> Username </td> <td> <input type="text"/></td> <br><br>
-        </tr>
-        <tr>
-         <td> Password</td> <td> <input type="password"/></td> <br><br>
-        </tr>
-        <tr> <td></td>
-        <td><button class="btn-lg btn-success my-2 my-sm-0" type="submit" style="text-align: center">
-            SIGNUP
-          </button></td>
-        </tr>
-         </table>
-       </form>
+            <div class="col-md-12" id="user1" style=" display:none; ">
+              <tr>
+                <td>First Name </td>
+                <td>
+                  <input type="text" formControlName="f_name" name="f_name" /> </td>
+                <br>
+                <br>
+              </tr>
+              <tr>
+                <td> Last Name</td>
+                <td>
+                  <input type="text" formControlName="l_name" name='l_name' />
+                </td>
+                <br>
+                <br>
+              </tr>
+              <tr>
+                <td> D O B </td>
+                <td>
+                  <input type="date" formControlName="dob" name='dob' /> </td>
+                <br>
+                <br>
+              </tr>
+              <tr>
+                <td> Gender: </td>
+                <td>
+                  <input type="radio" name="gender" value="male" formControlName="gender"> Male
+                  <input type="radio" name="gender" value="female" formControlName="gender"> Female
+                  <input type="radio" name="gender" value="other" formControlName="gender"> Other</td>
+                <br>
+                <br>
+              </tr>
+              <tr>
+                <td> Email </td>
+                <td>
+                  <input type="email" formControlName="email" /> </td>
+                <br>
+                <br>
+              </tr>
+              <tr>
+                <td> Username </td>
+                <td>
+                  <input type="text" formControlName="username" />
+                </td>
+                <br>
+                <br>
+              </tr>
+              <tr>
+                <td> Password</td>
+                <td>
+                  <input type="password" formControlName="password" />
+                </td>
+                <br>
+                <br>
+              </tr>
+
+
+            </div>
+            <div class="col-md-12" id="prov1" style="display:none">
+
+              <tr>
+                <td>Category</td>
+                <td>
+                  <select formControlName="category">
+                    <option value="mehandi">Mehandi</option>
+                    <option value="cateres">Cateres</option>
+                    <option value="photographers">Photographers</option>
+                    <option value="artist">Make-Up Artist</option>
+                    <option value="chor">Choreographers</option>
+                    <option value="dress">Wedding Dresses</option>
+                    <option value="music">Music</option>
+                    <option value="themes">Themes & Decors</option>
+                    <option value="honeymoon">Honeymoon Planners</option>
+                  </select>
+                </td>
+                <br>
+                <br>
+              </tr>
+              <tr>
+                <td>
+                  <label>Description</label>
+                </td>
+                <td>
+                  <textarea formControlName="description"></textarea>
+                </td>
+                <br>
+                <br>
+              </tr>
+              <tr>
+                <td>Experience</td>
+                <td>
+                  <select formControlName="experience">
+                    <option value="beginner">Beginner</option>
+                    <option value="1-2years">1-2Years</option>
+                    <option value="2-5years">2-5Years</option>
+                    <option value="5+years">5+ Years</option>
+                  </select>
+                </td>
+                <br>
+                <br>
+              </tr>
+            </div>
+            <tr>
+                <td></td>
+                <td id="sub" style="display: none">
+                  <button class="btn-lg btn-success my-2 my-sm-0" type="submit" style="text-align: center" >
+                    SIGNUP
+                  </button>
+                </td>
+              </tr>
+          </table>
+
+        </div>
       </div>
     </div>
-  </div>
-</div>
+  </form>
 </body>

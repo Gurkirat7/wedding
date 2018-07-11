@@ -19,7 +19,10 @@ export class SignupComponent implements OnInit {
     key: new FormControl('', Validators.required),
     dob: new FormControl('', Validators.required),
     gender: new FormControl('', Validators.required),
-    email: new FormControl('', Validators.required)
+    email: new FormControl('', Validators.required),
+    category: new FormControl('', Validators.required),
+    description: new FormControl('', Validators.required),
+    experience: new FormControl('', Validators.required)
   });
   constructor(private httpClient: HttpClient) {
     // this.reloadData();
@@ -44,13 +47,17 @@ title = 'app';
           }
         }
       );
+      alert('Thank You For Signing Up Please Login');
+      window.location.href = '/index.html';
   }
  user() {
     document.getElementById('user1').style.display = 'block';
     document.getElementById('prov1').style.display = 'none';
+    document.getElementById('sub').style.display = 'block';
  }
  prov() {
   document.getElementById('prov1').style.display = 'block';
-  document.getElementById('user1').style.display = 'none';
+  document.getElementById('user1').style.display = 'block';
+  document.getElementById('sub').style.display = 'block';
  }
 }
