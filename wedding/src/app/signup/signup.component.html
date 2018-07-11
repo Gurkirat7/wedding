@@ -7,27 +7,27 @@
       <h4 ><input type="radio" name="log" (click)="user()" formControlName="key">USER &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
         <input type="radio" name="log" (click)="prov()" formControlName="key">PROVIDER</h4>
     </div>
-    
+
     <div class="row">
         <div style="text-align: center; padding:20px">
             <h3>Come and join our website to have a Smooth Experience while <i>Planning Weddings</i> for your Loved Ones</h3>
-            
+
           </div>
       <div class="col-md-6" id="prov1" style=" display:none; ">
         <form [formGroup]="form" (ngSubmit)="singup()">
           <table>
         <tr>
-          <td>First Name </td> <td><input type="text" formControlName="f_name" /> </td><br><br>
+          <td>First Name </td> <td><input type="text" formControlName="f_name" name="f_name"/> </td><br><br>
         </tr>
         <tr>
-          <td> Last Name</td><td><input type="text" formControlName="l_name" /></td> <br><br>
+          <td> Last Name</td><td><input type="text" formControlName="l_name"  name='l_name'/></td> <br><br>
         </tr>
         <tr>
-         <td> D O B </td> <td><input type="date" formControlName="dob" /> </td> <br><br>
+         <td> D O B </td> <td><input type="date" formControlName="dob" name='dob' /> </td> <br><br>
         </tr>
         <tr>
-         <td> Gender: </td> <td><input type="radio" name="gender" value="male" formControlName="gender" > Male 
-          <input type="radio" name="gender" value="female" formControlName="gender"> Female 
+         <td> Gender: </td> <td><input type="radio" name="gender" value="male" formControlName="gender" > Male
+          <input type="radio" name="gender" value="female" formControlName="gender"> Female
           <input type="radio" name="gender" value="other" formControlName="gender"> Other</td> <br><br>
         </tr>
         <tr>
@@ -60,8 +60,8 @@
          <td> D O B </td> <td><input type="date"/> </td> <br><br>
         </tr>
         <tr>
-         <td> Gender: </td> <td><input type="radio" name="gender" value="male" > Male 
-          <input type="radio" name="gender" value="female"> Female 
+         <td> Gender: </td> <td><input type="radio" name="gender" value="male" > Male
+          <input type="radio" name="gender" value="female"> Female
           <input type="radio" name="gender" value="other"> Other</td> <br><br>
         </tr>
         <tr>
