@@ -4,8 +4,8 @@
 <div style="margin:250px; border:10px solid black;background-color: white;padding:50px">
     <div style="text-align: center; padding:20px; ">
       <h1 >Create A New Account</h1><br>
-      <h4 ><input type="radio" name="log" (click)="user()">USER &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-        <input type="radio" name="log" (click)="prov()">PROVIDER</h4>
+      <h4 ><input type="radio" name="log" (click)="user()" formControlName="key">USER &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+        <input type="radio" name="log" (click)="prov()" formControlName="key">PROVIDER</h4>
     </div>
     
     <div class="row">
@@ -14,30 +14,30 @@
             
           </div>
       <div class="col-md-6" id="prov1" style=" display:none; ">
-        <form>
+        <form [formGroup]="form" (ngSubmit)="singup()">
           <table>
         <tr>
-          <td>First Name </td> <td><input type="text"/> </td><br><br>
+          <td>First Name </td> <td><input type="text" formControlName="f_name" /> </td><br><br>
         </tr>
         <tr>
-          <td> Last Name</td><td><input type="text"/></td> <br><br>
+          <td> Last Name</td><td><input type="text" formControlName="l_name" /></td> <br><br>
         </tr>
         <tr>
-         <td> D O B </td> <td><input type="date"/> </td> <br><br>
+         <td> D O B </td> <td><input type="date" formControlName="dob" /> </td> <br><br>
         </tr>
         <tr>
-         <td> Gender: </td> <td><input type="radio" name="gender" value="male" > Male 
-          <input type="radio" name="gender" value="female"> Female 
-          <input type="radio" name="gender" value="other"> Other</td> <br><br>
+         <td> Gender: </td> <td><input type="radio" name="gender" value="male" formControlName="gender" > Male 
+          <input type="radio" name="gender" value="female" formControlName="gender"> Female 
+          <input type="radio" name="gender" value="other" formControlName="gender"> Other</td> <br><br>
         </tr>
         <tr>
-          <td> Email </td> <td><input type="email"/> </td> <br><br>
+          <td> Email </td> <td><input type="email" formControlName="email" /> </td> <br><br>
         </tr>
         <tr>
-          <td> Username </td> <td> <input type="text"/></td> <br><br>
+          <td> Username </td> <td> <input type="text" formControlName="username" /></td> <br><br>
         </tr>
         <tr>
-         <td> Password</td> <td> <input type="password"/></td> <br><br>
+         <td> Password</td> <td> <input type="password" formControlName="password" /></td> <br><br>
         </tr>
         <tr> <td></td>
         <td><button class="btn-lg btn-success my-2 my-sm-0" type="submit" style="text-align: center">
