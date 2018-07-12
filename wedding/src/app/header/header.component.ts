@@ -9,12 +9,20 @@ import { HttpClient } from '@angular/common/http';
 })
 export class HeaderComponent implements OnInit {
   form_insert_msg: String = '';
+  token = null;
   form = new FormGroup({
     username: new FormControl('', Validators.required),
     password: new FormControl('', Validators.required),
-  })
+  } );
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient) {
+    this.token = window.localStorage.getItem('token');
+    console.log(this.token);
+   }
+   logout() {
+    localStorage.clear();
+    window.location.reload();
+   }
 
   ngOnInit() {
   }
@@ -26,13 +34,16 @@ export class HeaderComponent implements OnInit {
       this.form.value)
       .subscribe(
         (data: any) => {
-          if(data.length>0){
+          if (data.succ === true) {
             this.form.reset();
             this.form_insert_msg = 'Login successfully !';
             alert('Login successfully !');
+            window.localStorage.setItem('token', data.token);
+            window.localStorage.setItem('f_name', data.f_name);
+            window.localStorage.setItem('l_name', data.l_name);
             window.location.href = '/index.html';
           } else {
-            this.form_insert_msg = 'Error while doing Login please try again';
+            alert('Error while doing Login please try again');
           }
         }
       );

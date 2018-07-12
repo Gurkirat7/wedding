@@ -3,7 +3,9 @@ var router = express.Router();
 var mongodb = require('mongodb');
 const MongoClient = mongodb.MongoClient
 var dbURL = "mongodb://127.0.0.1:27017";
-
+const Cryptr = require('cryptr');
+const cryptr = new Cryptr('myTotalySecretKey');
+ 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
   res.send('respond with a resource');
@@ -26,11 +28,16 @@ router.post('/doLogin', function (req, res, next) {
     if (err) return console.log(err);
     db = client.db('wedding'); // use crudDB
     // var token = 123;
-    // db.collection('users').update(req.body,{$set:{token:token}});
-      
+    // db.collection('users').update(req.body,{$set:{to='=ken:token}});
+    encryptionString = cryptr.encrypt(req.body.password+"asdf");
+    db.collection('users').update({'password':req.body.password,'username':req.body.username},{$set:{token:encryptionString}});  
     db.collection('users').find({'password':req.body.password,'username':req.body.username}).toArray(function (err, result) {
       if (err) return console.log(err);
-      res.json(result);      
+      if(result.length>0){
+        res.json({succ:true,msg:'login successfully',f_name:result[0].f_name,l_name:result[0].l_name,token:encryptionString});
+      }else{
+        res.json({succ:true,msg:'Error while login'});
+      }      
     });
   });
 });

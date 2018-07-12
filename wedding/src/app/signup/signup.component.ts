@@ -45,13 +45,12 @@ title = 'app';
             alert('Thank You For Signing Up Please Login');
             window.location.href = '/index.html';
           } else {
-            this.form_insert_msg = 'Error while doing signup please try again';
+            alert('Error while doing signup please try again');
           }
         }
       );
 
   }
-  
  user() {
     document.getElementById('user1').style.display = 'block';
     document.getElementById('prov1').style.display = 'none';
