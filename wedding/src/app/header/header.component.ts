@@ -37,13 +37,13 @@ export class HeaderComponent implements OnInit {
           if (data.succ === true) {
             this.form.reset();
             this.form_insert_msg = 'Login successfully !';
-            alert('Login successfully !');
+            alert(data.msg);
             window.localStorage.setItem('token', data.token);
             window.localStorage.setItem('f_name', data.f_name);
             window.localStorage.setItem('l_name', data.l_name);
             window.location.href = '/index.html';
           } else {
-            alert('Error while doing Login please try again');
+            alert(data.msg);
           }
         }
       );
