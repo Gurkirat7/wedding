@@ -25,6 +25,9 @@
                 <td>First Name </td>
                 <td>
                   <input type="text" formControlName="f_name" name="f_name" /> </td>
+                  <td><div *ngIf="form.controls.f_name.touched && !form.controls.f_name.valid" class="alert alert-danger">
+                    First Name is required
+                  </div></td>
                 <br>
                 <br>
               </tr>
@@ -40,6 +43,9 @@
                 <td> D O B </td>
                 <td>
                   <input type="date" formControlName="dob" name='dob' /> </td>
+                  <td><div *ngIf="form.controls.dob.touched && !form.controls.dob.valid" class="alert alert-danger">
+                    Date Of Birth is required
+                  </div></td>
                 <br>
                 <br>
               </tr>
@@ -49,6 +55,9 @@
                   <input type="radio" name="gender" value="male" formControlName="gender"> Male
                   <input type="radio" name="gender" value="female" formControlName="gender"> Female
                   <input type="radio" name="gender" value="other" formControlName="gender"> Other</td>
+                  <td><div *ngIf="form.controls.gender.touched && !form.controls.gender.valid" class="alert alert-danger">
+                    Gender is required
+                  </div></td>
                 <br>
                 <br>
               </tr>
@@ -56,14 +65,20 @@
                 <td> Email </td>
                 <td>
                   <input type="email" formControlName="email" /> </td>
+                  <td><div *ngIf="form.controls.email.touched && !form.controls.email.valid" class="alert alert-danger">
+                    Email is required
+                  </div></td>
                 <br>
                 <br>
               </tr>
-              <tr>
+             <tr>
                 <td> Username </td>
                 <td>
                   <input type="text" formControlName="username" />
                 </td>
+                <td><div *ngIf="form.controls.username.touched && !form.controls.username.valid" class="alert alert-danger">
+                  Username is required
+                </div></td>
                 <br>
                 <br>
               </tr>
@@ -72,57 +87,69 @@
                 <td>
                   <input type="password" formControlName="password" />
                 </td>
+                <td><div *ngIf="form.controls.password.touched && !form.controls.password.valid" class="alert alert-danger">
+                  Password is required
+                </div></td>
                 <br>
                 <br>
               </tr>
+              </div>
+              <div class="col-md-12" id="prov1" style="display:none">
 
+                <tr>
+                  <td>Category</td>
+                  <td>
+                    <select formControlName="category">
+                      <option value="mehandi">Mehandi</option>
+                      <option value="cateres">Cateres</option>
+                      <option value="photographers">Photographers</option>
+                      <option value="artist">Make-Up Artist</option>
+                      <option value="chor">Choreographers</option>
+                      <option value="dress">Wedding Dresses</option>
+                      <option value="music">Music</option>
+                      <option value="themes">Themes & Decors</option>
+                      <option value="honeymoon">Honeymoon Planners</option>
+                    </select>
+                  </td>
+                  <td><div *ngIf="form.controls.category.touched && !form.controls.category.valid" class="alert alert-danger">
+                    Category is required
+                  </div></td>
+                  <br>
+                  <br>
+                </tr>
+                <tr>
+                  <td>
+                    <label>Description</label>
+                  </td>
+                  <td>
+                    <textarea formControlName="description"></textarea>
+                  </td>
+                  <td><div *ngIf="form.controls.description.touched && !form.controls.description.valid" class="alert alert-danger">
+                    Description is required
+                  </div></td>
+                  <br>
+                  <br>
+                </tr>
+                <tr>
+                  <td>Experience</td>
+                  <td>
+                    <select formControlName="experience">
+                      <option value="beginner">Beginner</option>
+                      <option value="1-2years">1-2Years</option>
+                      <option value="2-5years">2-5Years</option>
+                      <option value="5+years">5+ Years</option>
+                    </select>
+                  </td>
+                  <td><div *ngIf="form.controls.experience.touched && !form.controls.experience.valid" class="alert alert-danger">
+                    Experience is required
+                  </div></td>
+                  <br>
+                  <br>
+                </tr>
+              </div>
 
-            </div>
-            <div class="col-md-12" id="prov1" style="display:none">
-
+            
               <tr>
-                <td>Category</td>
-                <td>
-                  <select formControlName="category">
-                    <option value="mehandi">Mehandi</option>
-                    <option value="cateres">Cateres</option>
-                    <option value="photographers">Photographers</option>
-                    <option value="artist">Make-Up Artist</option>
-                    <option value="chor">Choreographers</option>
-                    <option value="dress">Wedding Dresses</option>
-                    <option value="music">Music</option>
-                    <option value="themes">Themes & Decors</option>
-                    <option value="honeymoon">Honeymoon Planners</option>
-                  </select>
-                </td>
-                <br>
-                <br>
-              </tr>
-              <tr>
-                <td>
-                  <label>Description</label>
-                </td>
-                <td>
-                  <textarea formControlName="description"></textarea>
-                </td>
-                <br>
-                <br>
-              </tr>
-              <tr>
-                <td>Experience</td>
-                <td>
-                  <select formControlName="experience">
-                    <option value="beginner">Beginner</option>
-                    <option value="1-2years">1-2Years</option>
-                    <option value="2-5years">2-5Years</option>
-                    <option value="5+years">5+ Years</option>
-                  </select>
-                </td>
-                <br>
-                <br>
-              </tr>
-            </div>
-            <tr>
                 <td></td>
                 <td id="sub" style="display: none">
                   <button class="btn-lg btn-success my-2 my-sm-0" type="submit" style="text-align: center" >
