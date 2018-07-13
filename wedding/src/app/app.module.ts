@@ -20,6 +20,7 @@ import { PlannerComponent } from './planner/planner.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ArtistComponent } from './artist/artist.component';
 
 const appRoutes: Routes = [
   { path: '', component: MainComponent },
@@ -30,7 +31,8 @@ const appRoutes: Routes = [
   { path: 'mehandi', component: MehandiComponent },
   { path: 'caterers', component: CaterersComponent },
   { path: 'clothing', component: ClothingComponent },
-  { path: 'dj', component: DjComponent }
+  { path: 'dj', component: DjComponent },
+  { path: 'artist', component: ArtistComponent }
 ];
 
 @NgModule({
@@ -50,7 +52,8 @@ const appRoutes: Routes = [
     DjComponent,
     PlannerComponent,
     LoginComponent,
-    SignupComponent
+    SignupComponent,
+    ArtistComponent
   ],
   imports: [
     ReactiveFormsModule,
