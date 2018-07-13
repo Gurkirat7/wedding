@@ -11,6 +11,28 @@ export class DjComponent implements OnInit {
 
   ngOnInit() {
   }
+  catList = [
+    {
+      catCode:'arabic',
+      cat: 'Arabic',
+      checked:false
+    },
+    {
+      catCode:'indian',
+      cat: 'Indian',
+      checked:false
+    },
+    {
+      catCode:'pakistan',
+      cat: 'Pakistan',
+      checked:false
+    }
+  ];
+  catChecked(index){
+    // console.log("hi");1
+    this.catList[index].checked = !this.catList[index].checked;
+    console.log(this.catList);  
+  }
 
   // meh() {
    
