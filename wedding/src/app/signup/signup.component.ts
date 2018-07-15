@@ -12,6 +12,7 @@ export class SignupComponent implements OnInit {
   form_insert_msg: String = '';
   usersList: any;
   form = new FormGroup({
+    pic: new FormControl('', Validators.required),
     f_name: new FormControl('', Validators.required),
     l_name: new FormControl('', Validators.required),
     username: new FormControl('', Validators.required),
@@ -42,7 +43,7 @@ title = 'app';
           if (data.ok) {
             this.form.reset();
             this.form_insert_msg = 'Signup successfully !';
-            alert('Thank You For Signing Up Please Login');
+            alert('Thank You For Signing Up. Please Login');
             window.location.href = '/index.html';
           } else {
             alert('Error while doing signup please try again');

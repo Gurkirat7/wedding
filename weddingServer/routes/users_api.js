@@ -31,12 +31,7 @@ router.post('/doLogin', function (req, res, next) {
   
   MongoClient.connect(dbURL, (err, client) => {
     if (err) return console.log(err);
-
-
-
     db = client.db('wedding'); // use crudDB
-    // var token = 123;
-    // db.collection('users').update(req.body,{$set:{to='=ken:token}});
     encryptionString = cryptr.encrypt(req.body.password+"asdf");
     db.collection('users').update({'password':req.body.password,'username':req.body.username},{$set:{token:encryptionString}});  
     db.collection('users').find({'password':req.body.password,'username':req.body.username}).toArray(function (err, result) {
@@ -49,5 +44,35 @@ router.post('/doLogin', function (req, res, next) {
       }      
     });
   });}
+});
+
+router.post('/psave', function (req, res, next) {
+
+  let product_img = req.files.pic;
+  url = "profile_images/file"+Math.random(0,999)+req.files.pro.name;
+
+  product_img.mv("public/"+url, function(err) {
+    if (err)
+      return res.status(500).send(err);
+
+      MongoClient.connect(dbURL, (err, client) => {
+        if (err) return console.log(err);
+        db = client.db('wedding'); // use crudDB
+
+        var insertdata = {
+          product_name:req.body.product_name,
+          product_url: url,
+          product_cat:req.body.product_cat,
+          product_price:req.body.product_price
+        }
+
+        console.log(insertdata);  
+        db.collection('users').save(insertdata, function (err, result) {
+          if (err) return console.log(err);
+          res.end("/?insertSuccess=1");
+        });
+      });
+  });
+  console.log("save  ",req.body);
 });
 module.exports = router;
