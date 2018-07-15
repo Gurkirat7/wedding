@@ -3,17 +3,17 @@
        
   <div class="row">
     <div class="col-md-4">
-       Arabic <input type="checkbox" id="meh" (click)="meh()"><br><br>
-       Indian <input type="checkbox" id="meh" (click)="myFunction()"><br><br>
-       Pakistan <input type="checkbox" id="meh" (click)="myFunction()"><br><br>
-       Full Hand <input type="checkbox" id="meh" (click)="myFunction()"><br><br>
-        Feet<input type="checkbox" id="meh" (click)="myFunction()"><br><br>
-        Half Hand <input type="checkbox" id="meh" (click)="myFunction()"><br><br>
-       
 
+       <ul>
+          <li  *ngFor="let eachCat of catList; let i = index">
+            <input type="checkbox" id="meh" (click)="catChecked(i)" checked="true" *ngIf="eachCat.checked==true">
+            <input type="checkbox" id="meh" (click)="catChecked(i)" *ngIf="eachCat.checked==false">
+             {{eachCat.cat}}</li>
+ 
+</ul>
     </div>
     <div class="col-md-8">
-        <p id="text" style="display:none; font-size:40px;color:rgb(12, 12, 12)">Checkbox is CHECKED!</p>
+        <p id="text" style=" font-size:40px;color:rgb(12, 12, 12)">Checkbox is CHECKED!</p>
         
     </div>
   </div>
