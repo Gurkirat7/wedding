@@ -29,7 +29,7 @@ const appRoutes: Routes = [
   { path: 'contact', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
   { path: 'mehandi', component: MehandiComponent },
-  { path: 'caterers', component: CaterersComponent },
+  { path: 'explore/:keyword', component: CaterersComponent },
   { path: 'clothing', component: ClothingComponent },
   { path: 'dj', component: DjComponent },
   { path: 'artist', component: ArtistComponent }

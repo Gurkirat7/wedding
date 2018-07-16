@@ -8,6 +8,7 @@ var cors = require('cors');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users_api');
+var metRouter = require('./routes/met');
 const bodyParser= require('body-parser')
 var app = express();
 app.use(bodyParser.urlencoded({extended: true}));
@@ -22,9 +23,10 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+
 app.use('/', indexRouter);
 app.use('/users_api', usersRouter);
-
+app.use('/met', metRouter);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
