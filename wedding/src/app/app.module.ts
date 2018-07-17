@@ -21,6 +21,8 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ArtistComponent } from './artist/artist.component';
+import { FileSelectDirective } from 'ng2-file-upload';
+import { HttpModule } from '@angular/http';
 
 const appRoutes: Routes = [
   { path: '', component: MainComponent },
@@ -53,7 +55,8 @@ const appRoutes: Routes = [
     PlannerComponent,
     LoginComponent,
     SignupComponent,
-    ArtistComponent
+    ArtistComponent,
+    FileSelectDirective
   ],
   imports: [
     ReactiveFormsModule,
@@ -61,7 +64,8 @@ const appRoutes: Routes = [
     FormsModule,
     AppRoutingModule,
     RouterModule.forRoot(appRoutes),
-    HttpClientModule
+    HttpClientModule,
+    HttpModule
   ],
   providers: [],
   bootstrap: [AppComponent]

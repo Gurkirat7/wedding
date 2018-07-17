@@ -24,7 +24,7 @@
                 <tr>
                     <td>Your Photo</td>
                     <td>
-                      <input type="file" formControlName="pic" name="pic" /> </td>
+                      <input type="file" formControlName="photo" name="photo" ng2FileSelect [uploader]="uploader" /> </td>
                       <td><div *ngIf="form.controls.pic.touched && !form.controls.pic.valid" class="alert alert-danger">
                         Picture is required
                       </div></td>
@@ -162,7 +162,8 @@
               <tr>
                 <td></td>
                 <td id="sub" style="display: none">
-                  <button class="btn-lg btn-success my-2 my-sm-0" type="submit" style="text-align: center" >
+                  <button class="btn-lg btn-success my-2 my-sm-0" type="submit" style="text-align: center" 
+                  (click)="uploader.uploadAll()" [disabled]="!uploader.getNotUploadedItems().length">
                     SIGNUP
                   </button>
                 </td>
