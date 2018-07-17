@@ -4,7 +4,9 @@
     border-color: #71d5ba;
   }
   
-  
+  .image{
+    background-image: url("../../assets/img/texture-bw.png")
+  }
   
   body {
     padding-top: 3.5rem;
