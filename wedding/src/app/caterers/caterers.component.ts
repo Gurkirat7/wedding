@@ -23,10 +23,9 @@ Keyvalue: String = '';
 catDetails: any = '';
 
 getdetails(keyword) {
-
   this.httpClient.get('http://localhost:3000/met/sub/' + keyword)
     .subscribe(
-      (data: any[]) => {
+      (data: any) => {
          this.catDetails = data;
       }
     );
