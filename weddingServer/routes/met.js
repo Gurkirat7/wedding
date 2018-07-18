@@ -11,21 +11,20 @@ router.get('/', function(req, res, next) {
     res.send('respond with a resource');
   });
 
-  router.get('/sub', function (req, res, next) {
-    // console.log("config.dbURL" + config.db.dbURL);
+  router.get('/sub/:head', function (req, res, next) {
+    console.log("config.dbURL" + config.db.dbURL);
     // return;
     MongoClient.connect(config.db.dbURL, (err, client) => {
         
         if (err) return console.log(err);
-       req.query
-        console.log("coming here");
+      
+        console.log(req.params.head);
          db = client.db(config.db.dbName); // use crudDB
-         db.collection(config.db.AuthUserTable).find({key:req.query} ,{_id:1,username:1,f_name:1,l_name:1}).toArray(function (err, result) {
+         db.collection(config.db.expTable).find({'Category':req.params.head },{ 'Category':1,'Description':1}).toArray(function (err, result) {
    
           console.log(result);
-          var title= req.params.headings;
-       res.json( title );
-        //  res.json(result);
+        res.json( result );
+    
 
 
          });
