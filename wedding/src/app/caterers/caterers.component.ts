@@ -12,27 +12,25 @@ export class CaterersComponent implements OnInit {
   titlename: String = ' ';
 constructor(private httpClient: HttpClient, private activatedRoute: ActivatedRoute) {
     // this.reloadData();
-    console.log('comong here');
+    console.log('coming here');
     this.activatedRoute.params.subscribe((params: Params) => {
         this.titlename = params.keyword;
         this.getdetails(this.titlename);
-        console.log(this.titlename);
     });
 }
 
 Keyvalue: String = '';
 catDetails: any = '';
-getdetails(keywords) {
-  this.httpClient.get('http://localhost:3000/met/sub/?keyword=' + keywords)
+
+getdetails(keyword) {
+  this.httpClient.get('http://localhost:3000/met/sub/' + keyword)
     .subscribe(
       (data: any) => {
          this.catDetails = data;
-         console.log(keywords);
-         this.Keyvalue = keywords;
       }
     );
-  }
 
+  }
 
 
   ngOnInit() {
