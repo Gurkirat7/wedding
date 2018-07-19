@@ -9,8 +9,11 @@ var cors = require('cors');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users_api');
 var metRouter = require('./routes/met');
-const bodyParser= require('body-parser')
+const bodyParser= require('body-parser');
+var session = require('express-session');
+const fileUpload = require('express-fileupload');
 var app = express();
+app.use(fileUpload());
 app.use(bodyParser.urlencoded({extended: true}));
 // view engine setup
 app.use(cors({origin: 'http://localhost:4200'}));

@@ -39,6 +39,7 @@ public uploader:FileUploader = new FileUploader({url: 'http://localhost:3000', i
      //able to deal with the server response.
      this.uploader.onCompleteItem = (item:any, response:any, status:any, headers:any) => {
           console.log("ImageUpload:uploaded:", item, status, response);
+      
       };
   }
 
