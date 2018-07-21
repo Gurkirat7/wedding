@@ -25,9 +25,9 @@ router.post('/', function (req, res, next) {
        return res.status(422).send("an Error occured")
      }  
     // No error occured.
-     path = req.file.path;
-     return res.send("Upload Completed for "+path); 
-});     
+    //  path = req.file.path;
+     return res.send("Upload Completed for "); 
+    });
 })
 
 module.exports = router;

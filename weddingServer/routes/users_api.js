@@ -21,30 +21,30 @@ router.post('/insert', function (req, res, next) {
     });
   });
   
-  let product_img = req.files.uploader;
-  url = "uploads"+Math.random(0,999)+req.files.uploader.name;
-  // console.log("product url",url);
-  // final_path = __dirname+"/../public/"+url;
-  // console.log(final_path);
-  product_img.mv("public/"+url, function(err) {
-    if (err)
-      return res.status(500).send(err);
+  // let product_img = req.files.uploader;
+  // url = "uploads/"+Math.random(0,999)+req.files.uploader;
+  // // console.log("product url",url);
+  // // final_path = __dirname+"/../public/"+url;
+  // // console.log(final_path);
+  // product_img.mv("public/"+url, function(err,result) {
+  //   if (err)
+  //     return res.status(500).send(err);
 
-      MongoClient.connect(dbURL, (err, client) => {
-        if (err) return console.log(err);
-        db = client.db('wedding'); // use crudDB
+  //     MongoClient.connect(dbURL, (err, client) => {
+  //       if (err) return console.log(err);
+  //       db = client.db('wedding'); // use crudDB
 
-        var insertdata = {
-          image_url:url,
-        }
+  //       var insertdata = {
+  //         image_url:url,
+  //       }
 
-        console.log(insertdata);  
-        db.collection('users').save(insertdata, function (err, result) {
-          if (err) return console.log(err);
-          res.json(result);
-        });
-      });
-});
+  //       console.log(insertdata);  
+  //       db.collection('users').save(insertdata, function (err, result) {
+  //         if (err) return console.log(err);
+  //         res.json(result);
+  //       });
+  //     });
+    // });
 })
 
 
