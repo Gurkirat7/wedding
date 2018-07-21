@@ -15,7 +15,8 @@
 
 
   <!-- Main jumbotron for a primary marketing message or call to action -->
-  <div class="jumbotron " *ngFor="let x of catDetails">
+  <div *ngFor="let x of catDetails" >
+  <div class="jumbotron " [ngStyle]="{'background-image':'url(../../assets/img/background/' + x.url + ')'}" >
     <div class="container " >
       <h1 class="display-3" style="text-align: center;">{{this.titlename}}</h1>
       <p style="text-align: center; margin-top: 30px;"> {{x.Description}} </p>
@@ -25,7 +26,7 @@
 
 
       </div>
-
+</div>
   </div>
 
   <div class="list-group" ng-app="exploreApp">
