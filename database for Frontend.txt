@@ -16,3 +16,12 @@ db.explore.insert({ "Category" : "Themes", "Description" : "Contact Best of the 
 
 {  "Category" : "Mehandi", "Description" : "Contact Best Of The Best Mehandi Artists Near Your Area", "url" : "Mehandi.jpeg" }
 { "Category" : "Caterers", "Description" : "Contact Best Of The Best Caterers Near Your Area", "url" : "Caterers.jpg" }
+
+
+
+
+
+
+ inside wedding database 
+
+ye run krdena
