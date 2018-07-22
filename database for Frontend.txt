@@ -1,0 +1,18 @@
+db.explore.insert({ "Category" : "Themes", "Description" : "Contact Best of the Best Make-Up Artists Near Your Area", "url" : "Themes.jpg" })
+
+
+
+
+
+
+{ "Category" : "Music", "Description" : "Contact Best of the Best Musicians and Wedding Bands Near Your Area", "url" : "Music.jpg" }
+
+{ "Category" : "Designer", "Description" : "Contact Best of the Best Outfit Designers Near Your Area", "url" : "Dresses.jpeg" }
+{ "Category" : "Choreographer", "Description" : "Contact Best of the Best Choreographers Near Your Area", "url" : "Choreographers.jpg" }
+
+{ "Category" : "Make-Up", "Description" : "Contact Best of the Best Make-Up Artists Near Your Area", "url" : "Makeup.jpg" }
+
+{ "Category" : "Photographers", "Description" : "Contact Best Pre-Wedding and Wedding Near Your Area", "url" : "Photographers.jpeg" }
+
+{  "Category" : "Mehandi", "Description" : "Contact Best Of The Best Mehandi Artists Near Your Area", "url" : "Mehandi.jpeg" }
+{ "Category" : "Caterers", "Description" : "Contact Best Of The Best Caterers Near Your Area", "url" : "Caterers.jpg" }
