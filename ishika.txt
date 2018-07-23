@@ -1,0 +1,27 @@
+db.users.insert({"photo" : "C:\\fakepath\\mehendiartist.jpg", "f_name" : "Anamika", "l_name" : "Roy", "username" : "anamikaroy", "password" : "abc123", "key" : "providers", "dob" : "1965-06-13", "gender" : "female", "email" : "anamikaroy@abc.com", "category" : "mehandi", "description" : "Deals in all kinds of mehandi design", "experience" : "1-2years" })
+
+{"photo" : "C:\\fakepath\\caterer.jpg", "f_name" : "Mukesh", "l_name" : "Singh", "username" : "mksingh", "password" : "abc123", "key" : "providers", "dob" : "1960-07-14", "gender" : "male", "email" : "mksingh@abc.com", "category" : "cateres", "description" : "Deals in all kinds of cuisines", "experience" : "5+years"}
+
+
+{"photo" : "C:\\fakepath\\photo.jpg", "f_name" : "Abhishek", "l_name" : "Kumar", "username" : "abhik", "password" : "abc123", "key" : "providers", "dob" : "1980-08-16", "gender" : "male", "email" : "abhik@abc.com", "category" : "photographers", "description" : "Specialises in candid photoshoot", "experience" : "2-5years" }
+
+
+{"photo" : "C:\\fakepath\\makeup.jpg", "f_name" : "Neha", "l_name" : "Malik", "username" : "nmalik", "password" : "abc123", "key" : "providers", "dob" : "1987-02-08", "gender" : "female", "email" : "nmalik@abc.com", "category" : "artist", "description" : "Excels in all kind of make-up", "experience" : "1-2years"}
+
+
+{ "photo" : "C:\\fakepath\\dancer.jpg", "f_name" : "Sita", "l_name" : "Devi", "username" : "sdevi", "password" : "abc123", "key" : "providers", "dob" : "1979-10-16", "gender" : "female", "email" : "sdevi@abc.com", "category" : "chor", "description" : "Has choreographed celebrities", "experience" : "5+years" }
+
+
+{"photo" : "C:\\fakepath\\design.jpg", "f_name" : "Saumya", "l_name" : "Vats", "username" : "saumya", "password" : "abc123", "key" : "providers", "dob" : "1987-04-07", "gender" : "female", "email" : "saumya@abc.com", "category" : "dress", "description" : "Works as per clients full satisfaction", "experience" : "2-5years"}
+
+
+ {"photo" : "C:\\fakepath\\music.jpg", "f_name" : "Arman", "l_name" : "Malik", "username" : "amalik", "password" : "abc123", "key" : "providers", "dob" : "1985-11-22", "gender" : "male", "email" : "Amalik@abc.com", "category" : "music", "description" : "Make great arrangement for dj and bands", "experience" : "5+years" }
+
+
+{ "photo" : "C:\\fakepath\\theme.jpg", "f_name" : "Rahul", "l_name" : "Kaushik", "username" : "rahulk", "password" : "abc123", "key" : "providers", "dob" : "1976-11-25", "gender" : "male", "email" : "Rahulk@abc.com", "category" : "themes", "description" : "Makes great destination wedding arrangement", "experience" : "1-2years" }
+
+
+{ "photo" : "C:\\fakepath\\honey.jpg", "f_name" : "Aman", "l_name" : "Kumar", "username" : "aman", "password" : "abc123", "key" : "providers", "dob" : "1990-03-08", "gender" : "male", "email" : "aman@abc.com", "category" : "honeymoon", "description" : "Arranges honeymoon within your budget", "experience" : "2-5years" }
+
+
+{ "photo" : "C:\\fakepath\\ishi.png", "f_name" : "Ishika", "l_name" : "Raj", "username" : "ishika", "password" : "abc123", "key" : "user", "dob" : "1995-05-08", "gender" : "female", "email" : "ishika@abc.com", "category" : "", "description" : "", "experience" : ""}
