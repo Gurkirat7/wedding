@@ -32,12 +32,26 @@ router.get('/', function(req, res, next) {
 }); 
 
 
-// router.get("/sub/:headings", function(req, res) {
-//     console.log("working");
-//     var title= req.params.headings;
-//     res.json( title );
+router.get('/search/:head', function (req, res, next) {
+  console.log("config.dbURL" + config.db.dbURL);
+  // return;
+  MongoClient.connect(config.db.dbURL, (err, client) => {
+      
+      if (err) return console.log(err);
+    
+      console.log(req.params.head);
+       db = client.db(config.db.dbName); // use crudDB
+       db.collection(config.db.AuthUserTable).find({'category':req.params.head }).toArray(function (err, result) {
+ 
+        console.log(result);
+      res.json( result );
+  
 
-//   });
+
+       });
+  });
+}); 
+
 
 
 module.exports = router;

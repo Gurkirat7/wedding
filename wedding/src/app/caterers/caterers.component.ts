@@ -21,7 +21,7 @@ constructor(private httpClient: HttpClient, private activatedRoute: ActivatedRou
 
 Keyvalue: String = '';
 catDetails: any = '';
-
+proDetails: any = '';
 getdetails(keyword) {
   this.httpClient.get('http://localhost:3000/met/sub/' + keyword)
     .subscribe(
@@ -32,6 +32,14 @@ getdetails(keyword) {
 
   }
 
+  onclick(keyword) {
+    this.httpClient.get('http://localhost:3000/met/search/' + keyword)
+    .subscribe(
+      (data: any) => {
+         this.proDetails = data;
+  }
+);
+}
 
   ngOnInit() {
   }

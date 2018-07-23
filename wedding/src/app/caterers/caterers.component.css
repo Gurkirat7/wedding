@@ -45,7 +45,7 @@
 
   .btn-primary {
     color: #007c8c;
-    background-color: #ffffff;
+    background-color: #007c8c;
     border-color: #00BCD4;
    margin-top: 80px;
    height: 50px;
@@ -54,3 +54,16 @@
   .col-md-12 {
     padding: 0px;
   }
+
+
+  .hov:hover{
+    cursor: pointer;
+  display: inline-block;
+   vertical-align: middle;
+   transition-property: transform;
+  transform: scale(1.1);
+   transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
+.well{
+    background-image: url("../../assets/img/texture-bw.png")
+}

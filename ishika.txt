@@ -1,27 +1,58 @@
-db.users.insert({"photo" : "C:\\fakepath\\mehendiartist.jpg", "f_name" : "Anamika", "l_name" : "Roy", "username" : "anamikaroy", "password" : "abc123", "key" : "providers", "dob" : "1965-06-13", "gender" : "female", "email" : "anamikaroy@abc.com", "category" : "mehandi", "description" : "Deals in all kinds of mehandi design", "experience" : "1-2years" })
+db.users.insert({"photo" : "C:\\fakepath\\mehendiartist.jpg", "f_name" : "Anamika", "l_name" : "Roy", "username" : "anamikaroy", "password" : "abc123", "key" : "providers", "dob" : "1965-06-13", "gender" : "female", "email" : "anamikaroy@abc.com", "category" : "Mehandi", "description" : "Deals in all kinds of mehandi design", "experience" : "1-2years" })
 
-{"photo" : "C:\\fakepath\\caterer.jpg", "f_name" : "Mukesh", "l_name" : "Singh", "username" : "mksingh", "password" : "abc123", "key" : "providers", "dob" : "1960-07-14", "gender" : "male", "email" : "mksingh@abc.com", "category" : "cateres", "description" : "Deals in all kinds of cuisines", "experience" : "5+years"}
-
-
-{"photo" : "C:\\fakepath\\photo.jpg", "f_name" : "Abhishek", "l_name" : "Kumar", "username" : "abhik", "password" : "abc123", "key" : "providers", "dob" : "1980-08-16", "gender" : "male", "email" : "abhik@abc.com", "category" : "photographers", "description" : "Specialises in candid photoshoot", "experience" : "2-5years" }
+{"photo" : "C:\\fakepath\\caterer.jpg", "f_name" : "Mukesh", "l_name" : "Singh", "username" : "mksingh", "password" : "abc123", "key" : "providers", "dob" : "1960-07-14", "gender" : "male", "email" : "mksingh@abc.com", "category" : "Caterers", "description" : "Deals in all kinds of cuisines", "experience" : "5+years"}
 
 
-{"photo" : "C:\\fakepath\\makeup.jpg", "f_name" : "Neha", "l_name" : "Malik", "username" : "nmalik", "password" : "abc123", "key" : "providers", "dob" : "1987-02-08", "gender" : "female", "email" : "nmalik@abc.com", "category" : "artist", "description" : "Excels in all kind of make-up", "experience" : "1-2years"}
+{"photo" : "C:\\fakepath\\photo.jpg", "f_name" : "Abhishek", "l_name" : "Kumar", "username" : "abhik", "password" : "abc123", "key" : "providers", "dob" : "1980-08-16", "gender" : "male", "email" : "abhik@abc.com", "category" : "Photographers", "description" : "Specialises in candid photoshoot", "experience" : "2-5years" }
 
 
-{ "photo" : "C:\\fakepath\\dancer.jpg", "f_name" : "Sita", "l_name" : "Devi", "username" : "sdevi", "password" : "abc123", "key" : "providers", "dob" : "1979-10-16", "gender" : "female", "email" : "sdevi@abc.com", "category" : "chor", "description" : "Has choreographed celebrities", "experience" : "5+years" }
+{"photo" : "C:\\fakepath\\makeup.jpg", "f_name" : "Neha", "l_name" : "Malik", "username" : "nmalik", "password" : "abc123", "key" : "providers", "dob" : "1987-02-08", "gender" : "female", "email" : "nmalik@abc.com", "category" : "Make-Up", "description" : "Excels in all kind of make-up", "experience" : "1-2years"}
 
 
-{"photo" : "C:\\fakepath\\design.jpg", "f_name" : "Saumya", "l_name" : "Vats", "username" : "saumya", "password" : "abc123", "key" : "providers", "dob" : "1987-04-07", "gender" : "female", "email" : "saumya@abc.com", "category" : "dress", "description" : "Works as per clients full satisfaction", "experience" : "2-5years"}
+{ "photo" : "C:\\fakepath\\dancer.jpg", "f_name" : "Sita", "l_name" : "Devi", "username" : "sdevi", "password" : "abc123", "key" : "providers", "dob" : "1979-10-16", "gender" : "female", "email" : "sdevi@abc.com", "category" : "Choreographer", "description" : "Has choreographed celebrities", "experience" : "5+years" }
 
 
- {"photo" : "C:\\fakepath\\music.jpg", "f_name" : "Arman", "l_name" : "Malik", "username" : "amalik", "password" : "abc123", "key" : "providers", "dob" : "1985-11-22", "gender" : "male", "email" : "Amalik@abc.com", "category" : "music", "description" : "Make great arrangement for dj and bands", "experience" : "5+years" }
+{"photo" : "C:\\fakepath\\design.jpg", "f_name" : "Saumya", "l_name" : "Vats", "username" : "saumya", "password" : "abc123", "key" : "providers", "dob" : "1987-04-07", "gender" : "female", "email" : "saumya@abc.com", "category" : "Designer", "description" : "Works as per clients full satisfaction", "experience" : "2-5years"}
 
 
-{ "photo" : "C:\\fakepath\\theme.jpg", "f_name" : "Rahul", "l_name" : "Kaushik", "username" : "rahulk", "password" : "abc123", "key" : "providers", "dob" : "1976-11-25", "gender" : "male", "email" : "Rahulk@abc.com", "category" : "themes", "description" : "Makes great destination wedding arrangement", "experience" : "1-2years" }
+ {"photo" : "C:\\fakepath\\music.jpg", "f_name" : "Arman", "l_name" : "Malik", "username" : "amalik", "password" : "abc123", "key" : "providers", "dob" : "1985-11-22", "gender" : "male", "email" : "Amalik@abc.com", "category" : "Music", "description" : "Make great arrangement for dj and bands", "experience" : "5+years" }
 
 
-{ "photo" : "C:\\fakepath\\honey.jpg", "f_name" : "Aman", "l_name" : "Kumar", "username" : "aman", "password" : "abc123", "key" : "providers", "dob" : "1990-03-08", "gender" : "male", "email" : "aman@abc.com", "category" : "honeymoon", "description" : "Arranges honeymoon within your budget", "experience" : "2-5years" }
+{ "photo" : "C:\\fakepath\\theme.jpg", "f_name" : "Rahul", "l_name" : "Kaushik", "username" : "rahulk", "password" : "abc123", "key" : "providers", "dob" : "1976-11-25", "gender" : "male", "email" : "Rahulk@abc.com", "category" : "Themes", "description" : "Makes great destination wedding arrangement", "experience" : "1-2years" }
+
+
+{ "photo" : "C:\\fakepath\\honey.jpg", "f_name" : "Aman", "l_name" : "Kumar", "username" : "aman", "password" : "abc123", "key" : "providers", "dob" : "1990-03-08", "gender" : "male", "email" : "aman@abc.com", "category" : "Honeymoon-Planning", "description" : "Arranges honeymoon within your budget", "experience" : "2-5years" }
 
 
 { "photo" : "C:\\fakepath\\ishi.png", "f_name" : "Ishika", "l_name" : "Raj", "username" : "ishika", "password" : "abc123", "key" : "user", "dob" : "1995-05-08", "gender" : "female", "email" : "ishika@abc.com", "category" : "", "description" : "", "experience" : ""}
+
+
+
+
+
+
+
+
+
+
+
+
+{ "photo" : "C:\\fakepath\\Birju.jpg", "f_name" : "Birju", "l_name" : "Sharma", "username" : "birju23", "password" : "qwerty", "key" : "providers", "dob" : "1982-08-23", "gender" : "male", "email" : "sharma.mehendi@hotmail.com", "category" : "Mehandi", "description" : "Hi I am Birju Sharma and i run  Sharma Mehandi. We are providing mehandi services in weddings for almost 30 years now.We  have the best mehandi artists in the whole town.", "experience" : "5+years", "token" : "1af96b68d2be58bb9c207bd238d89f5546af" }
+
+{ "photo" : "C:\\fakepath\\sheela.jpg", "f_name" : "Sheela", "l_name" : "Tiwari", "username" : "sheela18", "password" : "qwerty", "key" : "providers", "dob" : "1990-07-18", "gender" : "female", "email" : "sheela.jawani@gmail.com", "category" : "Make-Up", "description" : "One of the best makeup artist in her area. she is doing this for the past 5 years and is very polite and adjusting", "experience" : "5+years" }
+
+{ "photo" : "C:\\fakepath\\Sartaj Singh.jpg", "f_name" : "Sartaj", "l_name" : "Singh", "username" : "sartaj04", "password" : "qwerty", "key" : "providers", "dob" : "1978-04-04", "gender" : "male", "email" : "singh.cook@gmail.com", "category" : "Caterers", "description" : "He runs the best catering house,Singh Catering. He know what he is doing and is on a prebooking of 5 months. ", "experience" : "5+years" }
+
+{  "photo" : "C:\\fakepath\\manoj.jpg", "f_name" : "Manoj", "l_name" : "Arora", "username" : "manoj07", "password" : "qwerty", "key" : "providers", "dob" : "1991-05-07", "gender" : "male", "email" : "arora.shoots@gmail.com", "category" : "Photographers", "description" : "Hi i am Manoj Arora. Started doing photography when i was 10 but doing wedding photographies since 10 years. Contact me for more info", "experience" : "5+years" }
+
+{ "photo" : "C:\\fakepath\\Sid dj.jpg", "f_name" : "Sidhart", "l_name" : "Ranjan", "username" : "sidd_dj", "password" : "qwerty", "key" : "providers", "dob" : "1993-11-13", "gender" : "male", "email" : "djsid@gmail.com", "category" : "Music", "description" : "Hi i am sidhart. I am a wedding DJ and been doing this job from last 4 years. I can also arrange for speakers and stuff. contact me for more information.", "experience" : "2-5years" }
+
+{ "photo" : "C:\\fakepath\\suresh.jpg", "f_name" : "Suresh", "l_name" : "iyer", "username" : "iyer12", "password" : "qwerty", "key" : "providers", "dob" : "1985-08-08", "gender" : "male", "email" : "iyer.suresh@gmail.com", "category" : "Themes", "description" : "Hi i am Suresh and i master in the art of deciding location. I have various location in which you can conduct destination weddings. From Kashmir to Kanyakumari. Just name a place and i will  handle the rest. contact me for more", "experience" : "5+years" }
+
+{"photo" : "C:\\fakepath\\jainab.jpg", "f_name" : "Jawahar", "l_name" : "Gandhi", "username" : "jawahar.designer", "password" : "qwerty", "key" : "providers", "dob" : "1995-05-05", "gender" : "other", "email" : "gandhi@hotmail.com", "category" : "Designer", "description" : "She is One of the most famous personalities in this field and she can create anything according to your style. She's being doing it for quite short time but the fame she has built in this time is incredible. Contact her for more information", "experience" : "1-2years" }
+
+{  "photo" : "C:\\fakepath\\Gaitonde.jpg", "f_name" : "Ganesh", "l_name" : "Gaitonde", "username" : "gaitonde_d", "password" : "qwerty", "key" : "providers", "dob" : "1989-01-03", "gender" : "male", "email" : "gaitonde_dancer@yahoo.in", "category" : "Choreographer", "description" : "Hi I am well trained choreographer and i know 14 dance styles  and i have won many dance awards and have choreographed over 100 wedding dances. Contact me for more info", "experience" : "2-5years" }
+
+{  "photo" : "C:\\fakepath\\zenab.jpg", "f_name" : "Zara", "l_name" : "George", "username" : "zara02", "password" : "qwerty", "key" : "providers", "dob" : "1992-08-06", "gender" : "female", "email" : "george.zara@gmail.com", "category" : "Honeymoon-Planning", "description" : "Don't know where to go for honeymoon? Don't Worry Zara is here to help you guys out to plan a perfect honeymoon. She has the idea of most exotic as well as erotic places on planet earth. Contact for more info", "experience" : "2-5years" }
+
+{  "photo" : "C:\\fakepath\\rajan.jpg", "f_name" : "Rajan", "l_name" : "Joshi", "username" : "rajan23", "password" : "qwerty", "key" : "user", "dob" : "1995-04-23", "gender" : "male", "email" : "rajanjoshi@gmail.com", "category" : "", "description" : "", "experience" : "" }

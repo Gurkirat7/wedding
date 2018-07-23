@@ -110,15 +110,15 @@
                   <td>Category</td>
                   <td>
                     <select formControlName="category">
-                      <option value="mehandi">Mehandi</option>
-                      <option value="cateres">Cateres</option>
-                      <option value="photographers">Photographers</option>
-                      <option value="artist">Make-Up Artist</option>
-                      <option value="chor">Choreographers</option>
-                      <option value="dress">Wedding Dresses</option>
-                      <option value="music">Music</option>
-                      <option value="themes">Themes & Decors</option>
-                      <option value="honeymoon">Honeymoon Planners</option>
+                      <option value="Mehandi">Mehandi</option>
+                      <option value="Caterers">Cateres</option>
+                      <option value="Photographers">Photographers</option>
+                      <option value="Make-Up">Make-Up Artist</option>
+                      <option value="Choreographer">Choreographers</option>
+                      <option value="Designer">Wedding Dresses</option>
+                      <option value="Music">Music</option>
+                      <option value="Themes">Themes & Decors</option>
+                      <option value="Honeymoon-Planning">Honeymoon Planners</option>
                     </select>
                   </td>
                   <td><div *ngIf="form.controls.category.touched && !form.controls.category.valid" class="alert alert-danger">
@@ -158,18 +158,18 @@
                 </tr>
               </div>
 
-            
+
               <tr>
                 <td></td>
                 <td id="sub" style="display: none">
-                  <button class="btn-lg btn-success my-2 my-sm-0" type="submit" style="text-align: center" 
+                  <button class="btn-lg btn-success my-2 my-sm-0" type="submit" style="text-align: center"
                   (click)="uploader.uploadAll()" [disabled]="!uploader.getNotUploadedItems().length">
                     SIGNUP
                   </button>
                 </td>
               </tr>
           </table>
-          
+
         </div>
       </div>
     </div>

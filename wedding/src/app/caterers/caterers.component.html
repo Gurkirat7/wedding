@@ -1,4 +1,6 @@
-+<head>
++
+
+<head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
@@ -15,21 +17,46 @@
 
 
   <!-- Main jumbotron for a primary marketing message or call to action -->
-  <div *ngFor="let x of catDetails" >
-  <div class="jumbotron " [ngStyle]="{'background-image':'url(../../assets/img/background/' + x.url + ')'}" >
-    <div class="container " >
-      <h1 class="display-3" style="text-align: center;">{{this.titlename}}</h1>
-      <p style="text-align: center; margin-top: 30px;"> {{x.Description}} </p>
-      <p>  <a class='btn col-md-4'></a>
-        <a class="btn btn-primary btn-outline-success btn-lg col-md-4" href="#" role="button">Find {{this.titlename}} Professional  &raquo;</a></p><br>
-        <!-- Contact Best Of The Best Mehandi Artists Near Your Area  -->
-
+  <div *ngFor="let x of catDetails">
+    <div class="jumbotron " [ngStyle]="{'background-image':'url(../../assets/img/background/' + x.url + ')'}">
+      <div class="container ">
+        <h1 class="display-3" style="text-align: center;">{{this.titlename}}</h1>
+        <p style="text-align: center; margin-top: 30px;"> {{x.Description}} </p>
+        <p>
+          <a class='btn col-md-4'></a>
+          <a class="btn btn-primary btn-outline-success btn-lg col-md-4"  role="button" (click)="onclick(this.titlename)">Find {{this.titlename}} Professional &raquo;</a>
+        </p>
+        <br>
 
       </div>
-</div>
+    </div>
   </div>
+  <div id='displaying1' *ngFor="let y of proDetails">
+    <div class="row" style="margin-top: 100px">
+      <div class="col-sm-4">
+        <div class="media" class="well hov">
 
+          <div class="media-left media-middle">
+            <img src="../../assets/img/21.jpeg" class="media-object" class="rounded-circle" style="width:100px ; height: 150px;">
+          </div>
+          <div class="media-body">
+            <h4 class="media-heading">{{y.f_name}} {{y.l_name}}</h4>
+            <ul>
+              <li><b>Phone no</b>: xxxxxxxxxx</li>
+              <li><b>Email</b>:{{y.email}}</li>
+              <li><b>Description</b>: {{y.description}}</li>
+              <li><b>Experience</b>: {{y.experience}}</li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+ </div>
 
 </main>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
 <script src="cat.js"> </script>
