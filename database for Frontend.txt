@@ -1,9 +1,9 @@
-db.explore.insert({ "Category" : "Themes", "Description" : "Contact Best of the Best Make-Up Artists Near Your Area", "url" : "Themes.jpg" })
+db.explore.insert({ "Category" : "Honeymoon-Planning", "Description" : "Contact Best of the Best Honeymoon planning Professionals Near Your Area", "url" : "Honeymoon.jpg" })
 
 
 
 
-
+{ "Category" : "Themes", "Description" : "Contact Best of the Best Make-Up Artists Near Your Area", "url" : "Themes.jpg" }
 
 { "Category" : "Music", "Description" : "Contact Best of the Best Musicians and Wedding Bands Near Your Area", "url" : "Music.jpg" }
 
