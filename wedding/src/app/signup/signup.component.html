@@ -141,6 +141,17 @@
                   <br>
                 </tr>
                 <tr>
+                  <td> Phone No. </td>
+                  <td>
+                    <input type="number" formControlName="phone" />
+                  </td>
+                  <td><div *ngIf="form.controls.phone.touched && !form.controls.phone.valid" class="alert alert-danger">
+                    Phone No. is required
+                  </div></td>
+                  <br>
+                  <br>
+                </tr>
+                <tr>
                   <td>Experience</td>
                   <td>
                     <select formControlName="experience">
