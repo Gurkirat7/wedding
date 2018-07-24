@@ -18,7 +18,7 @@ db.users.insert({"photo" : "C:\\fakepath\\mehendiartist.jpg", "f_name" : "Anamik
  {"photo" : "C:\\fakepath\\music.jpg", "f_name" : "Arman", "l_name" : "Malik", "username" : "amalik", "password" : "abc123", "key" : "providers", "dob" : "1985-11-22", "gender" : "male", "email" : "Amalik@abc.com", "category" : "Music", "description" : "Make great arrangement for dj and bands", "experience" : "5+years" }
 
 
-{ "photo" : "C:\\fakepath\\theme.jpg", "f_name" : "Rahul", "l_name" : "Kaushik", "username" : "rahulk", "password" : "abc123", "key" : "providers", "dob" : "1976-11-25", "gender" : "male", "email" : "Rahulk@abc.com", "category" : "Themes", "description" : "Makes great destination wedding arrangement", "experience" : "1-2years" }
+{ "photo" : "C:\\fakepath\\theme.jpg", "f_name" : "Rahul", "l_name" : "Kaushik", "username" : "rahulk", "password" : "abc123", "key" : "providers", "dob" : "1976-11-25", "gender" : "male", "email" : "Rahulk@abc.com", "category" : "Themes", "description" : "Makes great arrangement for destination weddings", "experience" : "1-2years" }
 
 
 { "photo" : "C:\\fakepath\\honey.jpg", "f_name" : "Aman", "l_name" : "Kumar", "username" : "aman", "password" : "abc123", "key" : "providers", "dob" : "1990-03-08", "gender" : "male", "email" : "aman@abc.com", "category" : "Honeymoon-Planning", "description" : "Arranges honeymoon within your budget", "experience" : "2-5years" }
