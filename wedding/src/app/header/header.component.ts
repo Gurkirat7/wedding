@@ -21,8 +21,8 @@ export class HeaderComponent implements OnInit {
    }
    logout() {
     localStorage.clear();
-    window.location.reload();
-   }
+    window.location.href = '/index.html';
+  }
 
   ngOnInit() {
   }
