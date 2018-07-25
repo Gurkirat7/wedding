@@ -14,41 +14,37 @@
   }
 
   main{
-
     margin-top: 57px;
-
-
   }
 
   .jumbotron {
-
     background-repeat: no-repeat;
     background-size: cover;
     height:630px;
     margin-bottom: 0.5%;
     padding-top: 180px;
-
-
   }
 
   @font-face {
     font-family: soicon;
-    src: url("https://fonts.googleapis.com/css?family=Spirax");
+    src: url("https://fonts.googleapis.com/css?family=Neucha|Merienda|Spirax");
   }
 
   .container{
     font-family: 'Spirax', cursive;
     color: white;
-
-
-  }
+    font-weight: 300;
+}
 
   .btn-primary {
     color: #007c8c;
     background-color: #007c8c;
     border-color: #00BCD4;
    margin-top: 80px;
-   height: 50px;
+   font-family: 'Chela One', cursive;
+  font-size: 30px;
+  letter-spacing: 3px;
+  padding: 20px;
   }
 
   .col-md-12 {
@@ -65,5 +61,37 @@
    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
 }
 .well{
-    background-image: url("../../assets/img/texture-bw.png")
+    background-image: url("../../assets/img/texture-bw.png");
+    display: inline-block;
+    padding: 25px;
+    width: 500px;
+  height: 102%;
+
+}
+.media-body{
+  margin: 10px;
+}
+.media-heading{
+  font-family: 'Spirax', cursive;
+  font-size: 40px;
+  font-weight: 1000;
+  letter-spacing:2px;
+}
+#displaying1{
+  display: inline-block;
+  margin-right: 100px;
+  margin-bottom: 30px;
+}
+tr{
+  padding: 5px;
+  font-size: 20px;
+}
+td{
+  padding: 5px;
+  font-family: 'Merienda', cursive;
+}
+tr b{
+  font-family: 'Neucha', cursive;
+  font-size: 30px;
+  font-weight:800;
 }
