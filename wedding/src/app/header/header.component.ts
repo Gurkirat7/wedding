@@ -41,6 +41,14 @@ export class HeaderComponent implements OnInit {
             window.localStorage.setItem('token', data.token);
             window.localStorage.setItem('f_name', data.f_name);
             window.localStorage.setItem('l_name', data.l_name);
+            window.localStorage.setItem('gender', data.gender);
+            window.localStorage.setItem('email', data.email);
+            window.localStorage.setItem('photo', data.photo);
+            window.localStorage.setItem('category', data.category);
+            window.localStorage.setItem('description', data.description);
+            window.localStorage.setItem('experience', data.experience);
+            window.localStorage.setItem('phone', data.phone);
+            window.localStorage.setItem('dob', data.dob);
             window.location.href = '/index.html';
           } else {
             alert(data.msg);
