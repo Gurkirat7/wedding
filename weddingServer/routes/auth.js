@@ -12,14 +12,14 @@ router.get('/login.html', function (req, res, next) {
 }); 
 
 // it will check login
-router.post('/checklogin', function (req, res, next) {
+router.post('/checklogin.html', function (req, res, next) {
     // console.log("config.dbURL" + config.db.dbURL);
     // return;
     MongoClient.connect(config.db.dbURL, (err, client) => {
         if (err) return console.log(err);
         console.log("coming here");
-        db = client.db(config.db.wedding); // use crudDB
-        db.collection(config.db.users).find({'password':req.body.password,'username':req.body.username}).toArray(function (err, result) {
+        db = client.db(config.db.dbName); // use crudDB
+         db.collection(config.db.AuthUserTable).find(req.body).toArray(function (err, result) {
           if (err) return console.log(err);
           console.log("length of result is "+result.length);
           if(result.length>0){
@@ -29,7 +29,18 @@ router.post('/checklogin', function (req, res, next) {
           }else{
             res.redirect(config.siteConfig.base_url+"auth/login?loginsucc=0");
           }
-        //  res.json(result);
+        //   res.json(result);
         });
     });
 }); 
+
+
+router.get('/register.html', function (req, res, next) {
+    res.render("admin_panel/auth/login",{siteConfig:config.siteConfig});
+});  
+router.get('/logout.html', function (req, res, next) {
+    req.session.destroy();
+    res.redirect(config.siteConfig.base_url+"auth/login.html");    
+});
+module.exports = router;
+    

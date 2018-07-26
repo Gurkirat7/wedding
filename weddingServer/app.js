@@ -8,12 +8,24 @@ var cors = require('cors');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users_api');
+var authRouter = require('./routes/auth');
+var dashboardRouter = require('./routes/dashboard');
+var manageUsersRouter = require('./routes/manage_users');
 var metRouter = require('./routes/met');
 const bodyParser= require('body-parser');
 var session = require('express-session');
 const fileUpload = require('express-fileupload');
 var app = express();
 app.use(fileUpload());
+app.use(session({
+  secret: 'anaskldfjskd',
+  resave: false,
+  saveUninitialized: true,
+  cookie:{ 
+    expires : new Date(Date.now() + 3600000),
+    maxAge: 3600000 
+  }
+}))
 app.use(bodyParser.urlencoded({extended: true}));
 // view engine setup
 app.use(cors({origin: 'http://localhost:4200'}));
@@ -30,6 +42,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 app.use('/users_api', usersRouter);
 app.use('/met', metRouter);
+app.use('/auth',authRouter);
+app.use('/dashboard',dashboardRouter);
+app.use('/manage_users',manageUsersRouter);
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));

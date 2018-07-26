@@ -1,0 +1,77 @@
+extends ../includes/admin_layout
+block rightSidebar
+  h1= title
+  h2= subTitle
+  h3.alert.alert-success= extraMessage
+  p This form will insert data into wedding's database
+  form(action="#{actionURL}",method="post")
+    .form-group 
+      label KEY
+                    .radio-inline
+                      label USER
+                      input#key.form-control(type="radio", name="key", value="user")
+                      
+                      label PROVIDER
+                      input#key.form-control(type="radio", name="key", value="providers")                       
+                    
+    .form-group 
+      label(for="f_name") First name
+      input#f_name.form-control(name="f_name", type="text")
+    .form-group 
+      label(for="l_name") Last name
+      input#l_name.form-control(name="l_name", type="text")
+      .form-group 
+      label(for="dob") Date Of Birth
+      input#dob.form-control(name="dob", type="date")
+      .form-group 
+      label(for="gender") Gender
+      input#gender.form-control(name="gender", type="text")
+      .form-group 
+      label(for="email") Email
+      input#email.form-control(name="email", type="email")
+    .form-group 
+      label(for="username") Username
+      input#username.form-control(name="username", type="text")
+    .form-group 
+      label(for="password") Password
+      input#password.form-control(name="password", type="password")
+    .form-group 
+      label(for="category") Category
+       select#category.form-control(name="category")
+        option(value='Mehandi') Mehandi
+        |                       
+        option(value='Caterers') Cateres
+        |                       
+        option(value='Photographers') Photographers
+        option(value='Make-Up') Make-Up Artist
+        |                       
+        option(value='Choreographer') Choreographers
+        |                       
+        option(value='Designer') Wedding Dresses
+        |                       
+        option(value='Music') Music
+        |                       
+        option(value='Themes') Themes &amp; Decors
+        |                       
+        option(value='Honeymoon-Planning') Honeymoon Planners
+
+    .form-group 
+      label(for="description") Description
+      input#description.form-control(name="description", type="text")
+    .form-group 
+      label(for="phone") Phone No.
+      input#phone.form-control(name="phone", type="number")
+        |                       
+    .form-group 
+      label(for="experience") Experience
+      select#experience.form-control(name="experience")
+        option(value='beginner') Beginner
+        |  
+        option(value='1-2years') 1-2 Years
+        |                       
+        option(value='2-5years') 2-5 Years
+        |                       
+        option(value='5+years') 5+ Years
+        
+    .form-group 
+      input#submit.form-control(type="submit", value="Add User")

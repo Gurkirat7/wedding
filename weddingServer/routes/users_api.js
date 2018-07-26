@@ -7,9 +7,25 @@ const Cryptr = require('cryptr');
 const cryptr = new Cryptr('myTotalySecretKey');
  
 /* GET users listing. */
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+router.get('/get', function (req, res, next) {
+  // console.log(req.session.views);
+  if(req.session.views){
+    console.log("page view ",req.session.views++);
+  }else{
+    req.session.views = 1;
+  }
+  MongoClient.connect(dbURL, (err, client) => {
+    if (err) return console.log(err)
+    db = client.db('wedding'); // use crudDB
+    db.collection('users').find().toArray(function (err, result) {
+      if (err) return console.log(err);
+      // res.writeHead(200,{"content-type":"application/json"});
+      res.json(result);
+    });
+  });
 });
+
+
 
 router.post('/insert', function (req, res, next) {
   MongoClient.connect(dbURL, (err, client) => {
