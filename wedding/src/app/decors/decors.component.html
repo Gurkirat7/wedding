@@ -4,13 +4,13 @@
 <!------ Include the above in your HEAD tag ---------->
 
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-<div class="container" style="margin-top:120px;">
+<div class="container" style="margin-top:30px;margin-bottom:30px;">
 	    <div class="prog-page">
-		 <div class="header-title header-btn">
-		<div class="header-info">
+		 <div class="head-title head-btn row">
+		<div class="head-info col-md-8">
 		   <h2><i class="fa fa-info-circle"></i>Profile Information</h2>
 		</div>
-		<div class="header-btn-edit">
+		<div class="head-btn-edit col-md-4">
 		   <a href="#" type="button"><i class="fa fa-edit"></i>Edit Profile</a>
 		</div>
 		</div>
@@ -18,7 +18,7 @@
 		<div class="prof-page-info">
 		<div class="row">
 
-		<div class="col-md-3">
+		<div class="col-md-4">
 
 		  <div class="prof-img">
 		<div class="tags-label">
@@ -26,30 +26,48 @@
 		  </div>
 		  <img src="{{this.photo}}">
 		  <div class="img-title">
-		     <h2>{{this.f_name}}{{this.l_name}}</h2>
+		     <h1>{{this.f_name}}{{this.l_name}}</h1>
 		  </div>
 		</div>
 		</div>
 
-		<div class="col-md-9">
-
-
+		<div class="col-md-8">
 		   <div class="prof-info">
-
-		   <div class="info"><label><i class="fa fa-user"></i>Name :</label>  <span>{{this.f_name}} {{this.l_name}}</span></div>
-				   <div class="info"><label><i class="fa fa-user"></i>Category :</label>  <span>{{this.category}} </span></div>
-		   <div class="info"><label><i class="fa fa-calendar"></i>Date Of Birth :</label>  <span>{{this.dob}}</span></div>
-		   <div class="info"><label><i class="fa fa-male"></i>Description :</label>  <span>{{this.description}}</span></div>
-		   <div class="info"><label><i class="fa fa-male"></i>Experience :</label>  <span>{{this.experience}}</span></div>
- 		   <div class="info"><label><i class="fa fa-map-marker"></i>E-Mail:</label>  <span>{{this.email}}</span></div>
-		   <div class="info"><label><i class="fa fa-map-marker"></i>Phone :</label>  <span>{{this.phone}}</span></div>
-
-				  </div>
-			     		   </div>
-
-
-		   </div>
+		   <div class="info">
+			   <table>
+				   <tr>
+						<td><label><i class="fa fa-user"></i>Name</label></td><td>:</td><td><span>{{this.f_name}} {{this.l_name}}</span></td> 
+					</tr>
+					<tr>
+						<td><label><i class="fa fa-calendar"></i>Date Of Birth</label></td><td>:</td><td><span>{{this.dob}}</span></td>  
+					</tr>
+					<tr>
+							<td><label><i class="fa fa-user"></i>Gender</label></td><td>:</td><td><span>{{this.gender}}</span></td> 
+						</tr>
+					<tr>
+						<td><label><i class="fa fa-map-marker"></i>E-Mail</label></td><td>:</td><td><span>{{this.email}}</span></td>  
+					</tr>
+					<tr>
+							<td><label><i class="fa fa-user"></i>User Name</label></td><td>:</td><td><span>{{this.username}}</span></td> 
+						</tr>
+					<tr>
+						<td><label><i class="fa fa-map-marker"></i>Phone</label></td><td>:</td><td><span>{{this.phone}}</span></td>
+					</tr>
+					<tr>
+					   <td><label><i class="fa fa-map-marker"></i>Category</label></td><td>:</td><td><span>{{this.category}} </span></td> 
+					</tr>
+					<tr>
+				  	    <td><label><i class="fa fa-user"></i>Description</label></td><td>:</td><td><span>{{this.description}}</span></td>
+					</tr>
+					<tr>
+						<td><label><i class="fa fa-male"></i>Experience</label></td><td>:</td><td><span>{{this.experience}}</span></td>
+					</tr>
+				</table>
+ 		   	</div>
+		  </div>
 		</div>
-	</div>
-	</div>
 
+	   </div>
+	</div>
+	</div>
+	</div>

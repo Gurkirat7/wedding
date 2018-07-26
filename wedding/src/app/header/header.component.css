@@ -13,6 +13,12 @@ img {
 .nav-link{
     float: right;
 }
+.form-inline{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  float: right!important;
+  }
 .btn-outline-success:hover {
     color: #fff;
     background-color: #71d5ba;

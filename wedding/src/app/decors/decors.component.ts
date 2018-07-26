@@ -14,6 +14,7 @@ export class DecorsComponent implements OnInit {
   f_name = null;
   gender = null;
   email = null;
+  username = null;
   photo = null;
   category = null;
   description = null;
@@ -24,6 +25,7 @@ export class DecorsComponent implements OnInit {
     this.token = window.localStorage.getItem('token');
     this.f_name = window.localStorage.getItem('f_name');
     this.l_name = window.localStorage.getItem('l_name');
+    this.username = window.localStorage.getItem('username');
     this.gender = window.localStorage.getItem('gender');
     this.email = window.localStorage.getItem('email');
     this.photo = window.localStorage.getItem('photo');
