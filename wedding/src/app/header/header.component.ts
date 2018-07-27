@@ -40,6 +40,7 @@ export class HeaderComponent implements OnInit {
             alert(data.msg);
             window.localStorage.setItem('username', data.username);
             window.localStorage.setItem('token', data.token);
+            window.localStorage.setItem('key', data.key);
             window.localStorage.setItem('f_name', data.f_name);
             window.localStorage.setItem('l_name', data.l_name);
             window.localStorage.setItem('gender', data.gender);

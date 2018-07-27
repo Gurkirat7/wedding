@@ -10,6 +10,7 @@ import { HttpClient } from '@angular/common/http';
 
 export class DecorsComponent implements OnInit {
   token = null;
+  key = null;
   l_name = null;
   f_name = null;
   gender = null;
@@ -23,6 +24,7 @@ export class DecorsComponent implements OnInit {
   dob = null;
   constructor(private httpClient: HttpClient) {
     this.token = window.localStorage.getItem('token');
+    this.key = window.localStorage.getItem('key');
     this.f_name = window.localStorage.getItem('f_name');
     this.l_name = window.localStorage.getItem('l_name');
     this.username = window.localStorage.getItem('username');
@@ -35,8 +37,6 @@ export class DecorsComponent implements OnInit {
     this.phone = window.localStorage.getItem('phone');
     this.dob = window.localStorage.getItem('dob');
   }
-
-
 
 
   ngOnInit() {

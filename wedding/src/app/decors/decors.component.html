@@ -10,15 +10,15 @@
 		<div class="head-info col-md-8">
 		   <h2><i class="fa fa-info-circle"></i>Profile Information</h2>
 		</div>
-		<div class="head-btn-edit col-md-4">
+		<!-- <div class="head-btn-edit col-md-4">
 		   <a href="#" type="button"><i class="fa fa-edit"></i>Edit Profile</a>
-		</div>
+		</div> -->
 		</div>
 
 		<div class="prof-page-info">
 		<div class="row">
-
-		<div class="col-md-4">
+			<div class="col-md-1"></div>
+		<div class="col-md-3">
 
 		  <div class="prof-img">
 		<div class="tags-label">
@@ -39,29 +39,31 @@
 						<td><label><i class="fa fa-user"></i>Name</label></td><td>:</td><td><span>{{this.f_name}} {{this.l_name}}</span></td> 
 					</tr>
 					<tr>
-						<td><label><i class="fa fa-calendar"></i>Date Of Birth</label></td><td>:</td><td><span>{{this.dob}}</span></td>  
+						<label><td><i class="fa fa-calendar"></i></td><td>Date Of Birth</td></label><td>:</td><td><span>{{this.dob}}</span></td>  
 					</tr>
 					<tr>
-							<td><label><i class="fa fa-user"></i>Gender</label></td><td>:</td><td><span>{{this.gender}}</span></td> 
+						<label><td><i class="fa fa-user"></i></td><td>Gender</td></label><td>:</td><td><span>{{this.gender}}</span></td> 
+					</tr>
+					<tr>
+						<label><td><i class="fa fa-map-marker"></i></td><td>E-Mail</td></label><td>:</td><td><span>{{this.email}}</span></td>  
+					</tr>
+					<tr>
+						<label><td><i class="fa fa-user"></i></td><td>User Name</td></label><td>:</td><td><span>{{this.username}}</span></td> 
 						</tr>
+					<div *ngIf="key==provider">
 					<tr>
-						<td><label><i class="fa fa-map-marker"></i>E-Mail</label></td><td>:</td><td><span>{{this.email}}</span></td>  
+						<label><td><i class="fa fa-map-marker"></i></td><td>Phone</td></label><td>:</td><td><span>{{this.phone}}</span></td>
 					</tr>
 					<tr>
-							<td><label><i class="fa fa-user"></i>User Name</label></td><td>:</td><td><span>{{this.username}}</span></td> 
-						</tr>
-					<tr>
-						<td><label><i class="fa fa-map-marker"></i>Phone</label></td><td>:</td><td><span>{{this.phone}}</span></td>
+					   <label><td><i class="fa fa-map-marker"></i></td><td>Category</td></label><td>:</td><td><span>{{this.category}} </span></td> 
 					</tr>
 					<tr>
-					   <td><label><i class="fa fa-map-marker"></i>Category</label></td><td>:</td><td><span>{{this.category}} </span></td> 
+				  	    <label><td><i class="fa fa-user"></i></td><td>Description</td></label><td>:</td><td><span>{{this.description}}</span></td>
 					</tr>
 					<tr>
-				  	    <td><label><i class="fa fa-user"></i>Description</label></td><td>:</td><td><span>{{this.description}}</span></td>
+						<label><td><i class="fa fa-male"></i></td><td>Experience</td></label><td>:</td><td><span>{{this.experience}}</span></td>
 					</tr>
-					<tr>
-						<td><label><i class="fa fa-male"></i>Experience</label></td><td>:</td><td><span>{{this.experience}}</span></td>
-					</tr>
+				</div>
 				</table>
  		   	</div>
 		  </div>

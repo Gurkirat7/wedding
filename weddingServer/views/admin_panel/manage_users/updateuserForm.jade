@@ -7,6 +7,14 @@ block rightSidebar
   
   form(action=actionURL,method="post")
     .form-group 
+      label KEY
+                    .radio-inline
+                      label USER
+                      input#key.form-control(type="radio", name="key", value="user")
+                      
+                      label PROVIDER
+                      input#key.form-control(type="radio", name="key", value="providers")
+    .form-group 
       label(for="f_name") First name
       input#f_name.form-control(type="text", name="f_name",value="#{usersDetails.f_name}")
       input.form-control(type="hidden", name="objectID",value="#{usersDetails._id}")
