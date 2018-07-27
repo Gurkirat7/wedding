@@ -79,7 +79,7 @@ router.post('/doLogin', function (req, res, next) {
       if (err) return console.log(err);
       console.log(result);
       if(result.length>0){ 
-        res.json({succ:true,msg:'login successfully',f_name:result[0].f_name,l_name:result[0].l_name,gender:result[0].gender,email:result[0].email,photo:result[0].photo,phone:result[0].phone,category:result[0].category,description:result[0].description,experience:result[0].experience,dob:result[0].dob,token:encryptionString});
+        res.json({succ:true,msg:'login successfully',username:result[0].username,f_name:result[0].f_name,l_name:result[0].l_name,gender:result[0].gender,email:result[0].email,photo:result[0].photo,phone:result[0].phone,category:result[0].category,description:result[0].description,experience:result[0].experience,dob:result[0].dob,token:encryptionString});
       }else{
         res.json({succ:false,msg:'Error while login'});
       }      
