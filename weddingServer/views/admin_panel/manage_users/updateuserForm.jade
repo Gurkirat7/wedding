@@ -31,7 +31,7 @@ block rightSidebar
     .form-group 
       label(for="category") Category
        select#category.form-control(name="category") 
-        option(value='Mehandi') Mehandi
+        option(value=' #{usersDetails.category}')  #{usersDetails.category}
         |                       
         option(value='Caterers') Cateres
         |                       
@@ -48,6 +48,8 @@ block rightSidebar
         option(value='Themes') Themes &amp; Decors
         |                       
         option(value='Honeymoon-Planning') Honeymoon Planners
+        |                       
+        option(value='Mehandi') Mehandi
 
     .form-group
                     label Description
@@ -59,12 +61,17 @@ block rightSidebar
     .form-group 
       label(for="experience") Experience
       select#experience.form-control(name="experience") 
-        option(value='beginner') Beginner
+        option(value='#{usersDetails.experience}')  #{usersDetails.experience}
         |  
-        option(value='1-2years') 1-2 Years
+        option(value='1-2years') 0-2 Years
         |                       
         option(value='2-5years') 2-5 Years
         |                       
         option(value='5+years') 5+ Years
+        |                       
+        option(value='begginer') Begginer
     .form-group 
       input#submit.form-control(type="submit", value="Update User")
+
+
+       
