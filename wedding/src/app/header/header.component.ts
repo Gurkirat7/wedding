@@ -38,6 +38,7 @@ export class HeaderComponent implements OnInit {
             this.form.reset();
             this.form_insert_msg = 'Login successfully !';
             alert(data.msg);
+            window.localStorage.setItem('username', data.username);
             window.localStorage.setItem('token', data.token);
             window.localStorage.setItem('f_name', data.f_name);
             window.localStorage.setItem('l_name', data.l_name);
