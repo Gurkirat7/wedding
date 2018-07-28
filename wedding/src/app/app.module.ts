@@ -37,6 +37,7 @@ const appRoutes: Routes = [
   { path: 'artist', component: ArtistComponent },
   { path: 'Account', component: DecorsComponent },
   { path: 'SavedContacts', component: PhotographerComponent }
+  { path: 'ideas', component: LocationsComponent }
 ];
 
 @NgModule({
