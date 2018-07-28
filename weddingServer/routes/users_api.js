@@ -88,4 +88,17 @@ router.post('/doLogin', function (req, res, next) {
 });
 
 
-module.exports = router;
+
+router.post('/saveContact', function (req, res, next) {
+  MongoClient.connect(dbURL, (err, client) => {
+    if (err) return console.log(err);
+    db = client.db('wedding'); // use crudDB
+    db.collection('SaveContact').save(req.body, function (err, result) {
+      if (err) return console.log(err);
+      res.json(result);      
+    });
+  });
+});
+
+
+module.exports = router ;

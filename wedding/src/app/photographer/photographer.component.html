@@ -1,3 +1,34 @@
-<p>
-  photographer works!
-</p>
+<div id='displaying1' *ngFor="let y of proDetails">
+  <div class="row" style="margin-top: 100px">
+    <div class="col-md-2"></div>
+    <div class="col-md-8">
+      <div class="media" class="well hov">
+        <div class="media-left media-middle">
+          <img src="../../assets/img/21.jpeg" class="media-object" class="rounded-circle" style="width:100px ; height: 150px;">
+          &nbsp; &nbsp;<h2 class="media-heading" style="display: inline-block;">{{y.f_name}} {{y.l_name}}</h2>
+        </div>
+        <div class="media-body">
+          <table>
+            <tr>
+              <td><b>Phone no. </b></td> <td>:</td><td>{{y.phone}}</td>
+            </tr>
+            <tr>
+              <td><b>Email </b></td><td>:</td><td>{{y.email}}</td>
+            </tr>
+            <tr>
+                <td><b>Experience</b></td><td>:</td><td>{{y.experience}}</td>
+              </tr>
+              <tr>
+                <td><b>Description</b></td><td>:</td><td>{{y.description}}</td>
+              </tr>
+              <tr>
+                <a class="btn btn-primary btn-outline-success btn-lg col-md-6"  role="button" (click)="DeleteContact(y.username)">
+                  Delete Contact</a>
+              </tr>
+          </table>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

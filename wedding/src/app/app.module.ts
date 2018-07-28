@@ -35,7 +35,8 @@ const appRoutes: Routes = [
   { path: 'clothing', component: ClothingComponent },
   { path: 'dj', component: DjComponent },
   { path: 'artist', component: ArtistComponent },
-  { path: 'Account', component: DecorsComponent }
+  { path: 'Account', component: DecorsComponent },
+  { path: 'SavedContacts', component: PhotographerComponent }
 ];
 
 @NgModule({

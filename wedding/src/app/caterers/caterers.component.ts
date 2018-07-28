@@ -8,16 +8,21 @@ import {Router, ActivatedRoute, Params, ActivationEnd} from '@angular/router';
 })
 export class CaterersComponent implements OnInit {
 
-
+username = null;
+y = null;
   titlename: String = ' ';
 constructor(private httpClient: HttpClient, private activatedRoute: ActivatedRoute) {
     // this.reloadData();
+    this.username = window.localStorage.getItem('username');
     console.log('coming here');
     this.activatedRoute.params.subscribe((params: Params) => {
         this.titlename = params.keyword;
         this.getdetails(this.titlename);
+        this.y = {'savekey': this.username , 'description': '', 'f_name': '', 'l_name': '', 'email': '', 'phone': '', 'experience': '',
+        'photo': '', 'username': ''};
     });
 }
+
 
 Keyvalue: String = '';
 catDetails: any = '';
@@ -41,6 +46,32 @@ getdetails(keyword) {
 );
 }
 
+contactsave(x) {
+  console.log(this.y);
+  console.log(x);
+
+     this.y.f_name = x.f_name;
+     this.y.l_name = x.l_name;
+     this.y.description = x.description;
+     this.y.experience = x.experience ;
+     this.y.phone = x.phone;
+     this.y.email = x.email;
+     this.y.photo = x.photo;
+     this.y.username = x.username;
+     console.log(this.y);
+  console.log('"calling contactsave"');
+  this.httpClient.post('http://localhost:3000/users_api/saveContact',
+    this.y)
+    .subscribe(
+      (data: any) => {
+        if (data.ok) {
+          alert('Thank You');
+        } else {
+          alert('Error');
+        }
+      }
+    );
+  }
   ngOnInit() {
   }
 

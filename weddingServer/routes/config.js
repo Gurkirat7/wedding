@@ -8,7 +8,8 @@ exports.db = {
     dbURL: 'mongodb://127.0.0.1:27017',
     dbName: 'wedding',
     AuthUserTable:'users',
-    expTable:'explore'  
+    expTable:'explore' ,
+    svTable: 'SaveContact'  
 };
 
 exports.isLoggedIn = function(req,res){

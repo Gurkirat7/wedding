@@ -32,7 +32,7 @@
       </div>
     </div>
   </div>
-  
+
   <div id='displaying1' *ngFor="let y of proDetails">
     <div class="row" style="margin-top: 100px">
       <div class="col-md-2"></div>
@@ -56,13 +56,12 @@
                 <tr>
                   <td><b>Description</b></td><td>:</td><td>{{y.description}}</td>
                 </tr>
+                <tr>
+                  <a class="btn btn-primary btn-outline-success btn-lg col-md-6"  role="button" (click)="contactsave(y)">
+                    Save COntact</a>
+                </tr>
             </table>
-            <!-- <ul>
-              <li><b>Phone no</b>:{{y.phone}}</li>
-              <li><b>Email</b>:{{y.email}}</li>
-              <li><b>Experience</b>: {{y.experience}}</li>
-              <li><b>Description</b>:<br> {{y.description}}</li>              
-            </ul> -->
+
           </div>
         </div>
       </div>
