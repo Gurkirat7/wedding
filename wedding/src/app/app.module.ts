@@ -36,7 +36,7 @@ const appRoutes: Routes = [
   { path: 'dj', component: DjComponent },
   { path: 'artist', component: ArtistComponent },
   { path: 'Account', component: DecorsComponent },
-  { path: 'SavedContacts', component: PhotographerComponent }
+  { path: 'SavedContacts', component: PhotographerComponent },
   { path: 'ideas', component: LocationsComponent }
 ];
 
