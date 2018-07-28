@@ -1,0 +1,34 @@
+extends ../includes/admin_layout
+block rightSidebar
+  h1= title
+  h2= subTitle
+  h3.alert.alert-success= extraMessage
+  p This form will insert data into abc.users
+  
+  form(action="#{actionURL}",method="post")
+    .form-group 
+      label(for="category") Category
+       select#category.form-control(name="category")
+        option(value='Mehandi') Mehandi
+        |                       
+        option(value='Caterers') Cateres
+        |                       
+        option(value='Photographers') Photographers
+        option(value='Make-Up') Make-Up Artist
+        |                       
+        option(value='Choreographer') Choreographers
+        |                       
+        option(value='Designer') Wedding Dresses
+        |                       
+        option(value='Music') Music
+        |                       
+        option(value='Themes') Themes &amp; Decors
+        |                       
+        option(value='Honeymoon-Planning') Honeymoon Planners
+      input.form-control(type="hidden", name="objectID",value="#{usersDetails._id}")
+    .form-group
+      label(for="product_img") Ideas Image
+      input#product_img.form-control(name="product_img",type="file",value="")
+      img(src="./././public/products_img/")
+    .form-group 
+      input#submit.form-control(type="submit", value="Update product")

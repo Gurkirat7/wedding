@@ -11,6 +11,7 @@ var usersRouter = require('./routes/users_api');
 var authRouter = require('./routes/auth');
 var dashboardRouter = require('./routes/dashboard');
 var manageUsersRouter = require('./routes/manage_users');
+var productsRouter = require('./routes/products');
 var metRouter = require('./routes/met');
 const bodyParser= require('body-parser');
 var session = require('express-session');
@@ -45,6 +46,8 @@ app.use('/met', metRouter);
 app.use('/auth',authRouter);
 app.use('/dashboard',dashboardRouter);
 app.use('/manage_users',manageUsersRouter);
+app.use('/products',productsRouter);
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
@@ -69,5 +72,6 @@ app.use(function(req, res, next) {
       res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
       next();
   });
+
 
 module.exports = app;
