@@ -16,6 +16,11 @@
   border: 1px solid #343a40;
   transition: all 0.3s;
 }
+
+.bg{
+  background-image: url("../../assets/img/texture-bw.png");
+  padding-left: 40px;
+}
 a[_ngcontent-c3] {
   color: #343a40;
   text-decoration: none;
