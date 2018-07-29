@@ -1,13 +1,31 @@
 <div class="contain" style="margin-top: 100px;">
-<p>
-  locations works!
-</p>
+  <a class="btn btn-primary btn-outline-success btn-lg col-md-6"  role="button"  (click)="getAllProducts(this.Mehandi)">
+   Mehandi</a>
+   <a class="btn btn-primary btn-outline-success btn-lg col-md-6"  role="button"  (click)="getAllProducts(this.Caterers)">
+    Caterers</a>
+    <a class="btn btn-primary btn-outline-success btn-lg col-md-6"  role="button"  (click)="getAllProducts(this.Photographers)">
+      Photographers</a>
+      <a class="btn btn-primary btn-outline-success btn-lg col-md-6"  role="button"  (click)="getAllProducts(this.Designer)">
+        Designer</a>
+        <a class="btn btn-primary btn-outline-success btn-lg col-md-6"  role="button"  (click)="getAllProducts(this.Themes)">
+          Themes and Decor</a>
+          <a class="btn btn-primary btn-outline-success btn-lg col-md-6"  role="button"  (click)="getAllProducts(this.Choreographer)">
+            Choreographer</a>
+            <a class="btn btn-primary btn-outline-success btn-lg col-md-6"  role="button"  (click)="getAllProducts(this.Music)">
+              Music</a>
+              <a class="btn btn-primary btn-outline-success btn-lg col-md-6"  role="button"  (click)="getAllProducts(this.MakeUp)">
+               Make-up</a>
+               <a class="btn btn-primary btn-outline-success btn-lg col-md-6"  role="button"  (click)="getAllProducts(this.HMP)">
+                Honeymoon</a>
+                <a class="btn btn-primary btn-outline-success btn-lg col-md-6"  role="button"  (click)="getAllImages()">
+                  Show All Images</a>
+
 <div class="row">
     <div class="col-md-4 game_box" style="margin-top:100px;" *ngFor="let eachProduct of products">
   <div class="col-md-8 col-md-offset-2 zoom">
     <img src="{{APIURL}}{{eachProduct.product_img}}"  class="imgs"/>
   </div>
-  
+
   <div class="specs">
 
     <h2>{{eachProduct.category}}</h2>

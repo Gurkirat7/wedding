@@ -132,6 +132,20 @@ router.post('/getProducts', function (req, res, next) {
   MongoClient.connect(dbURL, (err, client) => {
     if (err) return console.log(err);
     db = client.db('wedding'); // use abc 
+    db.collection('idea').find({'category':req.body.category}).toArray(function (err, result) {
+      if (err) return console.log(err);
+      res.json(result);
+    });
+  });
+});
+
+
+
+router.get('/getImages', function (req,res, next) {
+
+  MongoClient.connect(dbURL, (err, client) => {
+    if (err) return console.log(err);
+    db = client.db('wedding'); // use abc 
     db.collection('idea').find().toArray(function (err, result) {
       if (err) return console.log(err);
       res.json(result);
