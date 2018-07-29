@@ -18,8 +18,14 @@
 }
 
 .bg{
-  background-image: url("../../assets/img/texture-bw.png");
-  padding-left: 40px;
+  background-image: url("../../assets/img/back.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  padding: 20px 40px;
+  font-family: 'Chela One', cursive;
+	font-size: 30px;
+	font-weight:100!important;
+	letter-spacing:3px;
 }
 a[_ngcontent-c3] {
   color: #343a40;
@@ -32,7 +38,11 @@ a[_ngcontent-c3] {
   color: #343a40;
 
 }
-
+#about{
+  font-family: 'Neucha', cursive;
+  font-size: 40px;
+  font-weight:800;  
+}
 
 .aboutus.body {
   padding-top: 54px;

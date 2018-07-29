@@ -1,39 +1,30 @@
 <div class="contain" style="margin-top: 100px;">
-  <a class="btn btn-primary btn-outline-success btn-lg col-md-6"  role="button"  (click)="getAllProducts(this.Mehandi)">
+  <a class="btn btn-primary btn-outline-info btn-lg col-md-4"  role="button"  (click)="getAllProducts(this.Mehandi)">
    Mehandi</a>
-   <a class="btn btn-primary btn-outline-success btn-lg col-md-6"  role="button"  (click)="getAllProducts(this.Caterers)">
+   <a class="btn btn-primary btn-outline-info btn-lg col-md-4"  role="button"  (click)="getAllProducts(this.Caterers)">
     Caterers</a>
-    <a class="btn btn-primary btn-outline-success btn-lg col-md-6"  role="button"  (click)="getAllProducts(this.Photographers)">
+    <a class="btn btn-primary btn-outline-info btn-lg col-md-4"  role="button"  (click)="getAllProducts(this.Photographers)">
       Photographers</a>
-      <a class="btn btn-primary btn-outline-success btn-lg col-md-6"  role="button"  (click)="getAllProducts(this.Designer)">
+      <a class="btn btn-primary btn-outline-info btn-lg col-md-4"  role="button"  (click)="getAllProducts(this.Designer)">
         Designer</a>
-        <a class="btn btn-primary btn-outline-success btn-lg col-md-6"  role="button"  (click)="getAllProducts(this.Themes)">
+        <a class="btn btn-primary btn-outline-info btn-lg col-md-4"  role="button"  (click)="getAllProducts(this.Themes)">
           Themes and Decor</a>
-          <a class="btn btn-primary btn-outline-success btn-lg col-md-6"  role="button"  (click)="getAllProducts(this.Choreographer)">
+          <a class="btn btn-primary btn-outline-info btn-lg col-md-4"  role="button"  (click)="getAllProducts(this.Choreographer)">
             Choreographer</a>
-            <a class="btn btn-primary btn-outline-success btn-lg col-md-6"  role="button"  (click)="getAllProducts(this.Music)">
+            <a class="btn btn-primary btn-outline-info btn-lg col-md-4"  role="button"  (click)="getAllProducts(this.Music)">
               Music</a>
-              <a class="btn btn-primary btn-outline-success btn-lg col-md-6"  role="button"  (click)="getAllProducts(this.MakeUp)">
+              <a class="btn btn-primary btn-outline-info btn-lg col-md-4"  role="button"  (click)="getAllProducts(this.MakeUp)">
                Make-up</a>
-               <a class="btn btn-primary btn-outline-success btn-lg col-md-6"  role="button"  (click)="getAllProducts(this.HMP)">
+               <a class="btn btn-primary btn-outline-info btn-lg col-md-4"  role="button"  (click)="getAllProducts(this.HMP)">
                 Honeymoon</a>
-                <a class="btn btn-primary btn-outline-success btn-lg col-md-6"  role="button"  (click)="getAllImages()">
+                <a class="btn btn-primary btn-outline-info btn-lg col-md-12"  role="button"  (click)="getAllImages()">
                   Show All Images</a>
-
+</div>
 <div class="row">
     <div class="col-md-4 game_box" style="margin-top:100px;" *ngFor="let eachProduct of products">
-  <div class="col-md-8 col-md-offset-2 zoom">
+  <div class="col-md-8 col-md-offset-2 ">
     <img src="{{APIURL}}{{eachProduct.product_img}}"  class="imgs"/>
   </div>
 
-  <div class="specs">
-
-    <h2>{{eachProduct.category}}</h2>
-      <p style="font-size:14px; color:rgb(46, 46, 46); font-family: Arial, Helvetica, sans-serif">
-      Hello<br>
-      Buy weed<br>
-      Please! Buy some weed. I promise you gonna love it.
-      </p>
-      </div>
-      </div>
+   </div>
 </div>

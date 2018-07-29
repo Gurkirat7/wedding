@@ -7,12 +7,13 @@ import {Router, ActivatedRoute, Params, ActivationEnd} from '@angular/router';
   styleUrls: ['./caterers.component.css']
 })
 export class CaterersComponent implements OnInit {
-
+token = null;
 username = null;
 y = null;
   titlename: String = ' ';
 constructor(private httpClient: HttpClient, private activatedRoute: ActivatedRoute) {
     // this.reloadData();
+    this.token = window.localStorage.getItem('token');
     this.username = window.localStorage.getItem('username');
     console.log('coming here');
     this.activatedRoute.params.subscribe((params: Params) => {
