@@ -36,6 +36,7 @@ export class DecorsComponent implements OnInit {
     this.experience = window.localStorage.getItem('experience');
     this.phone = window.localStorage.getItem('phone');
     this.dob = window.localStorage.getItem('dob');
+   
   }
 
 

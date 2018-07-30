@@ -72,6 +72,12 @@ block rightSidebar
         option(value='2-5years') 2-5 Years
         |                       
         option(value='5+years') 5+ Years
-        
+     .form-group 
+      label(for="auth") Authentication
+      select#auth.form-control(name="auth")
+        option(value='true') TRUE
+        |  
+        option(value='false') FALSE
+                
     .form-group 
       input#submit.form-control(type="submit", value="Add User")

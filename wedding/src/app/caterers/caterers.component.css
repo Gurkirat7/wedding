@@ -63,8 +63,8 @@
 .well{
     background-image: url("../../assets/img/texture-bw.png");
     display: inline-block;
-    padding: 25px;
-    width: 500px;
+    padding: 10px;
+    width: 625px;
   height: 102%;
 
 }
@@ -94,4 +94,20 @@ tr b{
   font-family: 'Neucha', cursive;
   font-size: 30px;
   font-weight:800;
+}
+.save{
+  font-family: inherit;
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  margin: 10% 60%;
+}
+.error{
+  background-image: url("../../assets/img/texture-bw.png");
+  padding: 50px;
+  text-align: center;
+  margin: 100px 30px 50px 30px;
+  font-family: 'Chela One', cursive;
+  font-size: 50px!important;
+  letter-spacing: 5px;
 }

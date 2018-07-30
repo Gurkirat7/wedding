@@ -1,5 +1,5 @@
-<div id='displaying1' *ngFor="let y of proDetails">
-  <div class="row" style="margin-top: 100px">
+<div id='displaying1' *ngFor="let y of proDetails" style="margin-top: 100px">
+  <div class="row" >
     <div class="col-md-2"></div>
     <div class="col-md-8">
       <div class="media" class="well hov">
@@ -22,7 +22,7 @@
                 <td><b>Description</b></td><td>:</td><td>{{y.description}}</td>
               </tr>
               <tr>
-                <a class="btn btn-primary btn-outline-success btn-lg col-md-6"  role="button" (click)="DeleteContact(y.username)">
+                <a class="btn btn-primary btn-outline-danger btn-lg del"  role="button" (click)="DeleteContact(y.username)">
                   Delete Contact</a>
               </tr>
           </table>

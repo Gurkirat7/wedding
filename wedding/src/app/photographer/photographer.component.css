@@ -1,14 +1,18 @@
-
+.btn-outline-danger:hover {
+  color: #fff!important;
+  /* background-color: #71d5ba;
+  border-color: #71d5ba; */
+}
 .well{
   background-image: url("../../assets/img/texture-bw.png");
   display: inline-block;
-  padding: 25px;
-  width: 500px;
+  padding: 20px;
+  width: 600px;
 height: 102%;
 
 }
 .media-body{
-margin: 10px;
+margin: 20px 10px;
 }
 .media-heading{
 font-family: 'Spirax', cursive;
@@ -18,7 +22,6 @@ letter-spacing:2px;
 }
 #displaying1{
 display: inline-block;
-margin-right: 100px;
 margin-bottom: 30px;
 }
 tr{
@@ -33,4 +36,10 @@ tr b{
 font-family: 'Neucha', cursive;
 font-size: 30px;
 font-weight:800;
+}
+.del{
+  text-align: center;
+  margin: 10% 50%;
+  font-size: 25px;
+  font-weight: 700;
 }

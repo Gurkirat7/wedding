@@ -22,7 +22,7 @@ html(lang='en')
     // Navigation
     nav.navbar.fixed-top.navbar-expand-lg.navbar-dark.bg-dark.fixed-top
       .container
-        a.navbar-brand(href='#{base_url}index.html') W E D D I N G
+        a.navbar-brand(href='#{base_url}index.html') SHAADI A-Z
         |         
         button.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
           span.navbar-toggler-icon
@@ -33,11 +33,10 @@ html(lang='en')
               a.nav-link(href='#{base_url}index.html') Home
             | 
             li.nav-item
-              a.nav-link(href='#{base_url}about.html') About us
-            |             
+              a.nav-link(href='#{base_url}auth/login.html') Login
             li.nav-item
-              a.nav-link(href='#{base_url}contact.html') Contact
-            |             
+              a.nav-link(href='#{base_url}auth/register.html') Register
+            |  
             li.nav-item.dropdown
               a#navbarDropdownPortfolio.nav-link.dropdown-toggle(href='#{base_url}#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
                 | My Account
@@ -48,11 +47,7 @@ html(lang='en')
                 a.dropdown-item(href='#{base_url}dashboard.html') Dashboard
                 |                 
                 a.dropdown-item(href='#{base_url}auth/logout.html') Logout 
-            li.nav-item
-              a.nav-link(href='#{base_url}auth/login.html') Login
-            li.nav-item
-              a.nav-link(href='#{base_url}auth/register.html') Register
-            |               
+                         
     // Page Content
     
     block midContent
@@ -60,7 +55,7 @@ html(lang='en')
     // Footer
     footer.py-5.bg-dark
       .container
-        p.m-0.text-center.text-white Copyright &copy; Your Website 2018
+        p.m-0.text-center.text-white Copyright &copy; SHAADI A-Z 2018
       // /.container
     // Bootstrap core JavaScript
     script(src='#{base_url}vendor/jquery/jquery.min.js')

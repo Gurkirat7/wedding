@@ -41,7 +41,7 @@ router.get('/search/:head', function (req, res, next) {
     
       console.log(req.params.head);
        db = client.db(config.db.dbName); // use crudDB
-       db.collection(config.db.AuthUserTable).find({'category':req.params.head }).toArray(function (err, result) {
+       db.collection(config.db.AuthUserTable).find({'category':req.params.head}).toArray(function (err, result) {
  
         console.log(result);
       res.json( result );

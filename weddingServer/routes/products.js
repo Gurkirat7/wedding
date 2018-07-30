@@ -33,7 +33,7 @@ router.post('/insert', function (req, res, next) {
     let product_img = req.files.product_img;
     var url = "products_img/files" + Math.random(0, 55555) + req.files.product_img.name;
     product_img.mv('public/' + url, function (err) {
-      if (err)
+      if (err)  
         return res.status(500).send(err);
       req.body['product_img'] = url;
       console.log("data to be inserted", req.body);

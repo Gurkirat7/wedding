@@ -11,11 +11,12 @@
 
 
 </head>
+<div *ngIf="token==null" class="error">
+  SORRY , But You Have to Login to See Any {{this.titlename}} Contacts
+</div>
 
-
+<div *ngIf="token!=null ">
 <main role="main">
-
-
   <!-- Main jumbotron for a primary marketing message or call to action -->
   <div *ngFor="let x of catDetails">
     <div class="jumbotron " [ngStyle]="{'background-image':'url(../../assets/img/background/' + x.url + ')'}">
@@ -35,8 +36,8 @@
 
   <div id='displaying1' *ngFor="let y of proDetails">
     <div class="row" style="margin-top: 100px">
-      <div class="col-md-2"></div>
-      <div class="col-md-8">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
         <div class="media" class="well hov">
           <div class="media-left media-middle">
             <img src="../../assets/img/21.jpeg" class="media-object" class="rounded-circle" style="width:100px ; height: 150px;">
@@ -57,8 +58,8 @@
                   <td><b>Description</b></td><td>:</td><td>{{y.description}}</td>
                 </tr>
                 <tr>
-                  <a class="btn btn-primary btn-outline-success btn-lg col-md-6"  role="button" (click)="contactsave(y)">
-                    Save COntact</a>
+                  <a class="btn btn-primary btn-outline-success btn-lg save"  role="button" (click)="contactsave(y)">
+                    Save Contact</a>
                 </tr>
             </table>
 
@@ -67,8 +68,8 @@
       </div>
     </div>
  </div>
-
 </main>
+</div>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
   crossorigin="anonymous"></script>
 <script src="cat.js"> </script>

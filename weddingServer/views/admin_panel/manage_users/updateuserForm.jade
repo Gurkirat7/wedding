@@ -84,6 +84,14 @@ block rightSidebar
       input#phone.form-control(name="phone", type="number",value="#{usersDetails.phone}")                     
     .form-group 
       input.form-control(type="hidden", name="objectID",value="#{usersDetails._id}")
+      label(for="auth") Authentication
+      select#auth.form-control(name="auth")
+        option(value='#{usersDetails.auth}')  #{usersDetails.auth}
+        option(value='true') TRUE
+        |  
+        option(value='false') FALSE
+
+    .form-group 
       input#submit.form-control(type="submit", value="Update User")
 
 

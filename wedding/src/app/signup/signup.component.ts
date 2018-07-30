@@ -24,7 +24,8 @@ export class SignupComponent implements OnInit {
     category: new FormControl('', Validators.required),
     description: new FormControl('', Validators.required),
     experience: new FormControl('', Validators.required),
-    phone: new FormControl('', Validators.required)
+    phone: new FormControl('', Validators.required),
+    auth: new FormControl('', Validators.required)
   });
   constructor(private httpClient: HttpClient) {
     // this.reloadData();
