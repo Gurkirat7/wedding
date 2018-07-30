@@ -45,7 +45,6 @@ router.get('/search/:head', function (req, res, next) {
  
         console.log(result);
       res.json( result );
-      // res.json({username:result[0].username,f_name:result[0].f_name,l_name:result[0].l_name,gender:result[0].gender,email:result[0].email,photo:result[0].photo,phone:result[0].phone,category:result[0].category,description:result[0].description,experience:result[0].experience,dob:result[0].dob,token:encryptionString});
 
 
        });
