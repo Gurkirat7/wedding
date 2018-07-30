@@ -13,7 +13,7 @@ block rightSidebar
                       input#key.form-control(type="radio", name="key", value="user")
                       
                       label PROVIDER
-                      input#key.form-control(type="radio", name="key", value="providers")
+                      input#key.form-control(type="radio", name="key", value="providers",checked="")
     .form-group 
       label(for="f_name") First name
       input#f_name.form-control(type="text", name="f_name",value="#{usersDetails.f_name}")
@@ -78,6 +78,14 @@ block rightSidebar
         option(value='5+years') 5+ Years
         |                       
         option(value='begginer') Begginer
+    .form-group 
+      label(for="auth") Authentication
+      select#auth.form-control(name="auth")
+        option(value='#{usersDetails.auth}')  #{usersDetails.auth}
+        option(value='true') TRUE
+        |  
+        option(value='false') FALSE
+
     .form-group 
       input#submit.form-control(type="submit", value="Update User")
 
