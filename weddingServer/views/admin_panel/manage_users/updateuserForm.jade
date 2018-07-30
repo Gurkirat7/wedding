@@ -6,7 +6,14 @@ block rightSidebar
   p This form will insert data into wedding's database
   
   form(action=actionURL,method="post")
-    
+    .form-group 
+      label KEY
+                    .radio-inline
+                      label USER
+                      input#key.form-control(type="radio", name="key", value="user")
+                      
+                      label PROVIDER
+                      input#key.form-control(type="radio", name="key", value="providers" , checked="")
     .form-group 
       label(for="photo") Photo
       input#f_name.form-control(type="text", name="photo",value="#{usersDetails.photo}")
@@ -22,14 +29,7 @@ block rightSidebar
     .form-group 
       label(for="password") Password
       input#password.form-control(type="password", name="password",value="#{usersDetails.password}")
-      .form-group 
-      label KEY
-                    .radio-inline
-                      label USER
-                      input#key.form-control(type="radio", name="key", value="user")
-                      
-                      label PROVIDER
-                      input#key.form-control(type="radio", name="key", value="providers")
+    
     .form-group 
       label(for="dob") Date Of Birth
       input#dob.form-control(name="dob", type="date",value="#{usersDetails.dob}")

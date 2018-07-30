@@ -9,6 +9,7 @@ img {
 
 .navbar-dark .navbar-nav .nav-link {
     color: #71d5ba;
+    font-size:17px;
 }
 .nav-link{
     float: right;
@@ -27,6 +28,7 @@ img {
 .btn{
     color:#71d5ba;
     border-color: #71d5ba;
+    font-size:17px;
 }
 h1{
     font-size: 50px;
