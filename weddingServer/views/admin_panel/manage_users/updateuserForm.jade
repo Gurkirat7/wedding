@@ -15,8 +15,8 @@ block rightSidebar
                       label PROVIDER
                       input#key.form-control(type="radio", name="key", value="providers" , checked="")
     .form-group 
-      label(for="photo") Photo
-      input#f_name.form-control(type="text", name="photo",value="#{usersDetails.photo}")
+      label(for="product_img") Photo
+      input#product_img.form-control(type="file", name="product_img",value="#{usersDetails.product_img}")
     .form-group 
       label(for="f_name") First name
       input#f_name.form-control(type="text", name="f_name",value="#{usersDetails.f_name}")

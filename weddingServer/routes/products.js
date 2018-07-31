@@ -98,8 +98,8 @@ router.get('/updateUser', function (req, res, next) {
       // console.log("value coming for userid "+req.query.objectID);
       // console.log(result[0]);
       res.render('admin_panel/products/updateuserForm', {
-        title: 'Manage products',
-        subTitle: 'Update products',
+        title: 'Manage Ideas',
+        subTitle: 'Update Ideas',
         usersDetails: result[0],
         actionURL: config.siteConfig.base_url + "products/updateuserindb",
         siteConfig: config.siteConfig,
@@ -107,7 +107,7 @@ router.get('/updateUser', function (req, res, next) {
       });
     });
   });
-
+  
 });
 
 // doing insert
