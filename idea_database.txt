@@ -128,5 +128,7 @@ db.idea.insert({"category" : "Mehandi","product_img" : "products_img/files0.5578
 
 {"category" : "Photographers","product_img" : "products_img/files0.34222733196584887z.jpeg"}
 
+{"category" : "Photographers","product_img" : "products_img/files0.2771474318874019u.jpg"}
 
+{"category" : "Themes","product_img" : "products_img/files0.750807315586741928.jpeg"}
 
