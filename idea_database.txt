@@ -1,0 +1,132 @@
+db.idea.insert({"category" : "Mehandi","product_img" : "products_img/files0.5578534914289119b.jpeg"})
+
+{"category" : "Mehandi","product_img" : "products_img/files0.959892123226227a.jpeg"}
+
+{"category" : "Mehandi","product_img" : "products_img/files0.81237717316965075.jpg"}
+
+{"category" : "Mehandi","product_img" : "products_img/files0.9561491176447419c.jpg"}
+
+{"category" : "Mehandi","product_img" : "products_img/files0.4048741766456061d.jpg"}
+
+{"category" : "Mehandi","product_img" : "products_img/files0.6835669578437611f.jpg"}
+
+{"category" : "Mehandi","product_img" : "products_img/files0.5334165992288142g.jpg"}
+
+{"category" : "Caterers","product_img" : "products_img/files0.304620109030470140.jpg"}
+
+{"category" : "Caterers","product_img" : "products_img/files0.3047323842922169441.jpg"}
+
+{"category" : "Caterers","product_img" : "products_img/files0.229334380345294342.jpg"}
+
+{"category" : "Caterers","product_img" : "products_img/files0.457719613151398143.jpg"}
+
+{"category" : "Caterers","product_img" : "products_img/files0.694022841922907144.jpg"}
+
+{"category" : "Caterers","product_img" : "products_img/files0.396887927777511745.jpg"}
+
+{"category" : "Caterers","product_img" : "products_img/files0.1338857817494503246.jpg"}
+
+{"category" : "Photographers","product_img" : "products_img/files0.97101724758707892.jpeg"}
+
+{"category" : "Make-Up","product_img" : "products_img/files0.08369550192746633n.jpg"}
+
+{"category" : "Choreographer","product_img" : "products_img/files0.960671702422347215.jpeg"}
+
+{"category" : "Designer","product_img" : "products_img/files0.662642211225788817.jpeg"}
+
+{"category" : "Music","product_img" : "products_img/files0.354328351031188148.jpg"}
+
+{"category" : "Themes","product_img" : "products_img/files0.0028127803042514722.jpg"}
+
+{"category" : "Honeymoon-Planning","product_img" : "products_img/files0.922738400013544855.jpg"}
+
+{"category" : "Photographers","product_img" : "products_img/files0.2644468296886808310.jpg"}
+
+{"category" : "Make-Up","product_img" : "products_img/files0.08196982969461719o.jpeg"}
+
+{"category" : "Choreographer","product_img" : "products_img/files0.313411177512483764.jpeg"}
+
+{"category" : "Designer","product_img" : "products_img/files0.03726468387525838616.jpeg"}
+
+{"category" : "Music","product_img" : "products_img/files0.37589581964817949.jpg"}
+
+{"category" : "Themes","product_img" : "products_img/files0.367071774884450757.jpg"}
+
+{"category" : "Honeymoon-Planning","product_img" : "products_img/files0.2205452075086591456.jpg"}
+
+{"category" : "Photographers","product_img" : "products_img/files0.30945981845099494.jpg"}
+
+{"category" : "Make-Up","product_img" : "products_img/files0.12145422012654672p.jpeg"}
+
+{"category" : "Choreographer","product_img" : "products_img/files0.04370126623595705h.jpg"}
+
+{"category" : "Designer","product_img" : "products_img/files0.899638298672450918.jpeg"}
+
+{"category" : "Music","product_img" : "products_img/files0.438617624948520147.jpg"}
+
+{"category" : "Themes","product_img" : "products_img/files0.28577282822375246.jpg"}
+
+{"category" : "Honeymoon-Planning","product_img" : "products_img/files0.331612049191156557.jpg"}
+
+{"category" : "Caterers","product_img" : "products_img/files0.3533963033949557.jpg"}
+
+{"category" : "Photographers","product_img" : "products_img/files0.811131445456653811.jpg"}
+
+{"category" : "Make-Up","product_img" : "products_img/files0.5715173657110015q.jpg"}
+
+{"category" : "Choreographer","product_img" : "products_img/files0.44661965285349026i.jfif"}
+
+{"category" : "Designer","product_img" : "products_img/files0.925070758580599119.jpg"}
+
+{"category" : "Music","product_img" : "products_img/files0.978255451967153450.jpg"}
+
+{"category" : "Themes","product_img" : "products_img/files0.597614948280308624.jpeg"}
+
+{"category" : "Honeymoon-Planning","product_img" : "products_img/files0.602553394573037258.jpg"}
+
+{"category" : "Photographers","product_img" : "products_img/files0.906222364717983513.jpg"}
+
+{"category" : "Make-Up","product_img" : "products_img/files0.8861835130811708s.jpg"}
+
+{"category" : "Choreographer","product_img" : "products_img/files0.34230358892661616j.jpg"}
+
+{"category" : "Designer","product_img" : "products_img/files0.593015983124523921.jpeg"}
+
+{"category" : "Music","product_img" : "products_img/files0.506258635980509951.jpg"}
+
+{"category" : "Themes","product_img" : "products_img/files0.637944851464962827.jpeg"}
+
+{"category" : "Themes","product_img" : "products_img/files0.828452384926126326.jpeg"}
+
+{"category" : "Themes","product_img" : "products_img/files0.954374401135216230.jpg"}
+
+{"category" : "Honeymoon-Planning","product_img" : "products_img/files0.791157986409740259.jpg"}
+
+{"category" : "Themes","product_img" : "products_img/files0.297935421552106631.jpeg"}
+
+{"category" : "Photographers","product_img" : "products_img/files0.441547985516688622.jpeg"}
+
+{"category" : "Photographers","product_img" : "products_img/files0.00909234663133062823.jpeg"}
+
+{"category" : "Choreographer","product_img" : "products_img/files0.8365931196639489k.jpg"}
+
+{"category" : "Themes","product_img" : "products_img/files0.357762279401806734.jpg"}
+
+{"category" : "Designer","product_img" : "products_img/files0.827605048635728320.jpeg"}
+
+{"category" : "Make-Up","product_img" : "products_img/files0.4357449182968218download.jpg"}
+
+{"category" : "Themes","product_img" : "products_img/files0.1552106085675748539.jpg"}
+
+{"category" : "Photographers","product_img" : "products_img/files0.18033045115865387x.jpeg"}
+
+{"category" : "Photographers","product_img" : "products_img/files0.33576408929059287oo.jpeg"}
+
+{"category" : "Make-Up","product_img" : "products_img/files0.31807428109659197make.jpg"}
+
+{"category" : "Choreographer","product_img" : "products_img/files0.6914671591377386m.jpg"}
+
+{"category" : "Photographers","product_img" : "products_img/files0.34222733196584887z.jpeg"}
+
+
+
