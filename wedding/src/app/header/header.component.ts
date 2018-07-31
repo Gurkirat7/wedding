@@ -45,7 +45,7 @@ export class HeaderComponent implements OnInit {
             window.localStorage.setItem('l_name', data.l_name);
             window.localStorage.setItem('gender', data.gender);
             window.localStorage.setItem('email', data.email);
-            window.localStorage.setItem('photo', data.photo);
+            window.localStorage.setItem('product_img', data.product_img);
             window.localStorage.setItem('category', data.category);
             window.localStorage.setItem('description', data.description);
             window.localStorage.setItem('experience', data.experience);

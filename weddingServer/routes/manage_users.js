@@ -27,10 +27,20 @@ router.post('/insert', function (req, res, next) {
   }
   MongoClient.connect(dbURL, (err, client) => {
     if (err) return console.log(err);
-    db = client.db('wedding'); // use crudDB
-    db.collection('users').save(req.body, function (err, result) {
-      if (err) return console.log(err);
-      res.redirect(config.siteConfig.base_url + "manage_users/?insertSuccess=1");
+    db = client.db('wedding'); // use abc
+    console.log(req.body);
+    console.log(req.files.product_img.name);
+    let product_img = req.files.product_img;
+    var url = "profile_images/files" + Math.random(0, 55555) + req.files.product_img.name;
+    product_img.mv('public/' + url, function (err) {
+      if (err)  
+        return res.status(500).send(err);
+      req.body['product_img'] = url;
+      console.log("data to be inserted", req.body);
+      db.collection('users').save(req.body, function (err, result) {
+        if (err) return console.log(err);
+        res.redirect(config.siteConfig.base_url + "manage_users/?insertSuccess=1");
+      });
     });
   });
 });
@@ -108,14 +118,32 @@ router.post('/updateuserindb', function (req, res, next) {
   MongoClient.connect(dbURL, (err, client) => {
     if (err) return console.log(err);
     db = client.db('wedding'); // use crudDB
+    let product_img = req.files.product_img;
+    var url = "profile_images/files" + Math.random(0, 55555) + req.files.product_img.name;
+    product_img.mv('public/' + url, function (err) {
+      if (err)  
+        return res.status(500).send(err);
+      req.body['product_img'] = url;
+      console.log("data to be inserted", req.body);
     db.collection('users').update({ 'username': req.body.username }, req.body, { upsert: false }, function (err, result) {
       if (err) return console.log(err);
       res.redirect(config.siteConfig.base_url + "manage_users/updateUser?objectID=" + req.body.objectID + "&insertSuccess=1");
     });
   });
 });
+});
 
+router.get('/getImages', function (req,res, next) {
 
+  MongoClient.connect(dbURL, (err, client) => {
+    if (err) return console.log(err);
+    db = client.db('wedding'); // use abc 
+    db.collection('users').find().toArray(function (err, result) {
+      if (err) return console.log(err);
+      res.json(result);
+    });
+  });
+});
 
 
 module.exports = router;

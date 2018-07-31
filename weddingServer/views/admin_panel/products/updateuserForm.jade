@@ -5,7 +5,7 @@ block rightSidebar
   h3.alert.alert-success= extraMessage
   p This form will insert data into wedding databse
   
-  form(action="#{actionURL}",method="post")
+  form(action="#{actionURL}",method="post",enctype='multipart/form-data')
     .form-group 
       label(for="category") Category
        select#category.form-control(name="category")

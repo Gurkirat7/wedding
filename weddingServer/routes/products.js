@@ -119,11 +119,21 @@ router.post('/updateuserindb', function (req, res, next) {
   MongoClient.connect(dbURL, (err, client) => {
     if (err) return console.log(err);
     db = client.db('wedding'); // use abc 
+    console.log(req.body);
+    console.log(req.files.product_img.name);
+    let product_img = req.files.product_img;
+    var url = "products_img/files" + Math.random(0, 55555) + req.files.product_img.name;
+    product_img.mv('public/' + url, function (err) {
+      if (err)  
+        return res.status(500).send(err);
+      req.body['product_img'] = url;
+      console.log("data to be inserted", req.body);
     db.collection('idea').update({ 'product_id': req.body.product_id }, req.body, { upsert: false }, function (err, result) {
       if (err) return console.log(err);
       res.redirect(config.siteConfig.base_url + "products/updateUser?objectID=" + req.body.objectID + "&insertSuccess=1");
     });
   });
+});
 });
 
 // doing insert

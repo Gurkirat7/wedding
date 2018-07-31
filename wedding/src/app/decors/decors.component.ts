@@ -16,12 +16,14 @@ export class DecorsComponent implements OnInit {
   gender = null;
   email = null;
   username = null;
-  photo = null;
+  product_img = null;
   category = null;
   description = null;
   experience = null;
   phone = null;
   dob = null;
+  products: any = 0;
+  APIURL = "http://localhost:3000/";
   constructor(private httpClient: HttpClient) {
     this.token = window.localStorage.getItem('token');
     this.key = window.localStorage.getItem('key');
@@ -30,19 +32,26 @@ export class DecorsComponent implements OnInit {
     this.username = window.localStorage.getItem('username');
     this.gender = window.localStorage.getItem('gender');
     this.email = window.localStorage.getItem('email');
-    this.photo = window.localStorage.getItem('photo');
+    this.product_img = window.localStorage.getItem('product_img');
     this.category = window.localStorage.getItem('category');
     this.description = window.localStorage.getItem('description');
     this.experience = window.localStorage.getItem('experience');
     this.phone = window.localStorage.getItem('phone');
     this.dob = window.localStorage.getItem('dob');
-   
+    this.getAllImages();
   }
 
 
   ngOnInit() {
   }
-
+  getAllImages() {
+    this.httpClient.get(this.APIURL + 'manage_users/getImages')
+      .subscribe(
+        (data: any) => {
+          this.products = data;
+        }
+      );
+  }
 }
 
 
