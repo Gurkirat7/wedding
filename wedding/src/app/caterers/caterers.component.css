@@ -65,7 +65,7 @@
     display: inline-block;
     padding: 10px;
     width: 625px;
-  height: 102%;
+  height: 750px;
 
 }
 .media-body{
@@ -79,8 +79,9 @@
 }
 #displaying1{
   display: inline-block;
-  margin-right: 100px;
+  margin-right: 5px;
   margin-bottom: 30px;
+  height: 500px;
 }
 tr{
   padding: 5px;

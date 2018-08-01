@@ -12,7 +12,7 @@
 
 
 
-<div >
+<div class="row" style="height: 100%;">
  <div class="col-md-2" >
  <div class="contain " style="margin-top: 0px; ">
   <a class="btn btn-primary btn-outline-info btn-lg col-sm-12"  role="button"  (click)="getAllProducts(this.Mehandi)">
@@ -50,15 +50,16 @@
        </div>
      </div> -->
 
-     <div class="row" >
+        <div class="col-md-10">
         <div class="col-md-4 tz-gallery game_box" style="margin-top:20px;" *ngFor="let eachProduct of products">
-      <div class="col-md-12  ">
+      <div class="  ">
           <a class="lightbox " href="{{APIURL}}{{eachProduct.product_img}}">
         <img src="{{APIURL}}{{eachProduct.product_img}}"  class="imgs"/>
          </a>
       </div>
+    </div>
        </div>
-     </div>
+
 
 </div>
 
