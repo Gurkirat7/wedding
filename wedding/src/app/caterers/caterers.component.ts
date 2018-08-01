@@ -10,6 +10,7 @@ export class CaterersComponent implements OnInit {
 token = null;
 username = null;
 y = null;
+APIURL = 'http://localhost:3000/';
   titlename: String = ' ';
 constructor(private httpClient: HttpClient, private activatedRoute: ActivatedRoute) {
     // this.reloadData();

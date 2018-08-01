@@ -1,30 +1,72 @@
-<div class="contain" style="margin-top: 100px;">
-  <a class="btn btn-primary btn-outline-info btn-lg col-md-4"  role="button"  (click)="getAllProducts(this.Mehandi)">
-   Mehandi</a>
-   <a class="btn btn-primary btn-outline-info btn-lg col-md-4"  role="button"  (click)="getAllProducts(this.Caterers)">
-    Caterers</a>
-    <a class="btn btn-primary btn-outline-info btn-lg col-md-4"  role="button"  (click)="getAllProducts(this.Photographers)">
-      Photographers</a>
-      <a class="btn btn-primary btn-outline-info btn-lg col-md-4"  role="button"  (click)="getAllProducts(this.Designer)">
-        Designer</a>
-        <a class="btn btn-primary btn-outline-info btn-lg col-md-4"  role="button"  (click)="getAllProducts(this.Themes)">
-          Themes and Decor</a>
-          <a class="btn btn-primary btn-outline-info btn-lg col-md-4"  role="button"  (click)="getAllProducts(this.Choreographer)">
-            Choreographer</a>
-            <a class="btn btn-primary btn-outline-info btn-lg col-md-4"  role="button"  (click)="getAllProducts(this.Music)">
-              Music</a>
-              <a class="btn btn-primary btn-outline-info btn-lg col-md-4"  role="button"  (click)="getAllProducts(this.MakeUp)">
-               Make-up</a>
-               <a class="btn btn-primary btn-outline-info btn-lg col-md-4"  role="button"  (click)="getAllProducts(this.HMP)">
-                Honeymoon</a>
-                <a class="btn btn-primary btn-outline-info btn-lg col-md-12"  role="button"  (click)="getAllImages()">
-                  Show All Images</a>
-</div>
-<div class="row">
-    <div class="col-md-4 game_box" style="margin-top:100px;" *ngFor="let eachProduct of products">
-  <div class="col-md-8 col-md-offset-2 ">
-    <img src="{{APIURL}}{{eachProduct.product_img}}"  class="imgs"/>
-  </div>
 
-   </div>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Wedding Ideas</title>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet">
+
+
+
+
+<div >
+ <div class="col-md-2" >
+ <div class="contain " style="margin-top: 50px; ">
+  <a class="btn btn-primary btn-outline-info btn-lg col-sm-12"  role="button"  (click)="getAllProducts(this.Mehandi)">
+   Mehandi</a>
+   <a class="btn btn-primary btn-outline-info btn-lg col-sm-12"  role="button"  (click)="getAllProducts(this.Caterers)">
+    Caterers</a>
+    <a class="btn btn-primary btn-outline-info btn-lg col-sm-12"  role="button"  (click)="getAllProducts(this.Photographers)">
+      Photographers</a>
+      <a class="btn btn-primary btn-outline-info btn-lg col-sm-12"  role="button"  (click)="getAllProducts(this.Designer)">
+        Designer</a>
+        <a class="btn btn-primary btn-outline-info btn-lg col-sm-12"  role="button"  (click)="getAllProducts(this.Themes)">
+          Themes and Decor</a>
+          <a class="btn btn-primary btn-outline-info btn-lg col-sm-12"  role="button"  (click)="getAllProducts(this.Choreographer)">
+            Choreographer</a>
+            <a class="btn btn-primary btn-outline-info btn-lg col-sm-12"  role="button"  (click)="getAllProducts(this.Music)">
+              Music</a>
+              <a class="btn btn-primary btn-outline-info btn-lg col-sm-12"  role="button"  (click)="getAllProducts(this.MakeUp)">
+               Make-up</a>
+               <a class="btn btn-primary btn-outline-info btn-lg col-sm-12"  role="button"  (click)="getAllProducts(this.HMP)">
+                Honeymoon</a>
+                <a class="btn btn-primary btn-outline-info btn-lg col-sm-12"  role="button"  (click)="getAllImages()">
+                  Show All Images</a>
+ </div>
+ </div>
+
+
+<!--
+    <div class="container gallery-container  col-md-9">
+       <div class="tz-gallery">
+           <div class="row" *ngFor="let eachProduct of products" class="col-sm-6 col-md-4 " >
+                     <a class="lightbox " href="{{APIURL}}{{eachProduct.product_img}}">
+                       <img  class="imgs" src="{{APIURL}}{{eachProduct.product_img}}" alt="Images">
+                     </a>
+           </div>
+       </div>
+     </div> -->
+
+     <div class="row" >
+        <div class="col-md-4 tz-gallery game_box" style="margin-top:20px;" *ngFor="let eachProduct of products">
+      <div class="col-md-12  ">
+          <a class="lightbox " href="{{APIURL}}{{eachProduct.product_img}}">
+        <img src="{{APIURL}}{{eachProduct.product_img}}"  class="imgs"/>
+         </a>
+      </div>
+       </div>
+     </div>
+
 </div>
+
+
+
+
+
+
+ <script>
+    baguetteBox.run('.tz-gallery');
+ </script>
