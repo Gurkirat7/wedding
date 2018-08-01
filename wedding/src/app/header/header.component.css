@@ -14,13 +14,13 @@ img {
 .navbar {
   min-height: 75px;
 }
-.navbar-brand {
+/* .navbar-brand {
   float: left;
   height: 50px;
   padding: 0px;
   font-size: 18px;
   line-height: 20px;
-}
+} */
 .nav-link{
     float: right;
 }
