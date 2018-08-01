@@ -10,6 +10,7 @@ export class PhotographerComponent implements OnInit {
   proDetails: any = '';
   username = null;
   array = null;
+  APIURL = 'http://localhost:3000/';
   constructor(private httpClient: HttpClient, private location: Location) {
     this.username = window.localStorage.getItem('username');
     this.showContacts(this.username);

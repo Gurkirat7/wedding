@@ -7,9 +7,8 @@
   background-image: url("../../assets/img/texture-bw.png");
   display: inline-block;
   padding: 20px;
-  width: 600px;
-height: 102%;
-
+  width: 625px;
+  height: 750px;
 }
 .media-body{
 margin: 20px 10px;
@@ -23,6 +22,7 @@ letter-spacing:2px;
 #displaying1{
 display: inline-block;
 margin-bottom: 30px;
+margin-right: 5px;
 }
 tr{
 padding: 5px;

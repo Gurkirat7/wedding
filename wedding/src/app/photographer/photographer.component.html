@@ -4,7 +4,7 @@
     <div class="col-md-8">
       <div class="media" class="well hov">
         <div class="media-left media-middle">
-          <img src="../../assets/img/21.jpeg" class="media-object" class="rounded-circle" style="width:100px ; height: 150px;">
+          <img src="{{APIURL}}{{y.product_img}}" class="media-object" class="rounded-circle" style="width:100px ; height: 150px;">
           &nbsp; &nbsp;<h2 class="media-heading" style="display: inline-block;">{{y.f_name}} {{y.l_name}}</h2>
         </div>
         <div class="media-body">
@@ -22,7 +22,7 @@
                 <td><b>Description</b></td><td>:</td><td>{{y.description}}</td>
               </tr>
               <tr>
-                <a class="btn btn-primary btn-outline-danger btn-lg del"  role="button" (click)="DeleteContact(y.username)">
+                <a class="btn btn-primary btn-outline-danger btn-lg del"  style="position:absolute; bottom:2%;left:-25%"  role="button" (click)="DeleteContact(y.username)">
                   Delete Contact</a>
               </tr>
           </table>

@@ -21,7 +21,7 @@ constructor(private httpClient: HttpClient, private activatedRoute: ActivatedRou
         this.titlename = params.keyword;
         this.getdetails(this.titlename);
         this.y = {'savekey': this.username , 'description': '', 'f_name': '', 'l_name': '', 'email': '', 'phone': '', 'experience': '',
-        'photo': '', 'username': ''};
+        'product_img': '', 'username': ''};
     });
 }
 
@@ -58,7 +58,7 @@ contactsave(x) {
      this.y.experience = x.experience ;
      this.y.phone = x.phone;
      this.y.email = x.email;
-     this.y.photo = x.photo;
+     this.y.product_img = x.product_img;
      this.y.username = x.username;
      console.log(this.y);
   console.log('"calling contactsave"');
@@ -67,7 +67,7 @@ contactsave(x) {
     .subscribe(
       (data: any) => {
         if (data.ok) {
-          alert('Thank You');
+          alert('Thank You! Contact Has Been Stored');
         } else {
           alert('Error');
         }
